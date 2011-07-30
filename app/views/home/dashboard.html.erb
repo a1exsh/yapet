@@ -1,0 +1,27 @@
+<h1><%=_("Dashboard")%></h1>
+<p>
+<% links = [link_to(s_("home|Expenses"), expenses_path,
+                    :class => "bgicon expense"),
+            link_to(s_("home|Items"), items_path,
+                    :class => "bgicon item"),
+            link_to(s_("home|Categories"), categories_path,
+                    :class => "bgicon category"),
+            link_to(s_("home|Statistics"), stats_expenses_path,
+                    :class => "bgicon stats")] %>
+<%=_("From here you can list or enter new %s, review or categorize
+entered %s and %s, or study some %s.  These options are also accessible from the
+navigation panel anywhere on the site.") % links %>
+</p>
+<p>
+<% link = link_to(_("Settings"), edit_settings_path,
+                  :class => "bgicon settings") %>
+<%=_("Click %s to change your password, email, add more users to your
+account or change other settings.") % link %>
+</p>
+<p>
+<%=_("Enjoy your stay.")%>
+</p>
+<p>
+<%= image_tag "kangaroo-left.png",
+    :title => _("Our mascot, kangaroo Petya") %>
+</p>

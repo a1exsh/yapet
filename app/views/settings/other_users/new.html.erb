@@ -1,0 +1,71 @@
+<h2><%=_("Settings")%></h2>
+<h3><%=_("Add Users to Your Account")%></h3>
+
+<p>
+<%=_("List as many email addresses as you need below.  These people will
+receive a mail with instructions to activate their email and after
+that you will share this account with them.")%>
+</p>
+<p class="warning">
+<strong><%=_("Warning!")%></strong> <%=_("Only add people you trust!  That
+is, your spouse and/or other family members.  They will have the same
+permissions as you do and could list, edit, create new or remove
+existing expenses, items, etc. on this account.")%>
+</p>
+
+<% unless @sent_emails.empty? %>
+<p>
+<%=_("Invitation email sent to:")%>
+<span class="email"><%=h @sent_emails.join(", ") %></span>
+</p>
+<% end %>
+
+<% failed = @failed_emails.to_a %>
+<% unless failed.empty? %>
+<p>
+<%=_("There were some problems while sending invitation emails for below
+users.  Please check if entered addresses are correct and try
+re-sending invitations if necessary.")%>
+</p>
+<% end %>
+
+<% form_tag({ :action => "create" }, :method => :post) do %>
+<table>
+  <thead>
+    <th></th>
+    <th><%=s_("th|Email")%></th>
+    <th></th>
+  </thead>
+  <tbody>
+    <% 5.times do |i| %>
+    <tr>
+      <% if i < failed.length %>
+      <td><div class="icon status-error"></div></td>
+      <td><%= text_field_tag "emails[#{i}]", failed[i].first %></td>
+      <td><%=h failed[i].last.map{ |m| m + "." }.join(" ") %></td>
+      <% else %>
+      <td><div class="icon"></div></td>
+      <td><%= text_field_tag "emails[#{i}]" %></td>
+      <td></td>
+      <% end %>
+    </tr>
+    <% end %>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">
+        <%= submit_tag _("Send invitations") %>
+      </td>
+    </tr>
+  </tfoot>
+</table>
+<% end %>
+
+<p>
+<% unless current_account.exclusive? %>
+<%= link_to _("Show people already on this account"),
+      settings_other_users_path, :class => "bgicon info" %> |
+<% end %>
+<%= link_to _("Go back to settings"), edit_settings_path,
+      :class => "bgicon back" %>
+</p>

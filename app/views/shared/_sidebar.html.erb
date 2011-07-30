@@ -1,0 +1,42 @@
+<% if logged_in? %>
+  <% unless logged_in_as_admin? %>
+    <ul id="nav">
+      <li>
+        <%= link_to _("Expenses"), expenses_path,
+            :class => "bgicon expense" %>
+      </li>
+      <li>
+        <%= link_to _("Items"), items_path,
+            :class => "bgicon item" %>
+      </li>
+      <li>
+        <%= link_to _("Categories"), categories_path,
+            :class => "bgicon category" %>
+      </li>
+      <li>
+        <span class="bgicon stats"><%= _("Statistics") %></span>
+        <ul>
+          <li>
+            <%= link_to _("By Date"), stats_expenses_path,
+                :class => "bgicon stats-date" %>
+          </li>
+          <li>
+            <%= link_to _("By Category"), stats_categories_path,
+                :class => "bgicon category" %>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div id="quick_stats_wrapper">
+      <%= render :partial => "stats/expenses/quick" %>
+    </div>
+    <div id="invites_wrapper">
+      <%= render :partial => "invitations/quick" %>
+    </div>
+  <% else %>
+    <ul id="admin_nav">
+      <li><%= link_to 'Accounts', accounts_path %></li>
+      <li><%= link_to 'Users', users_path %></li>
+    </ul>
+  <% end %>
+<% end %>

@@ -1,0 +1,25 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "6.110.195.in-addr.arpa" {
+	type master;
+	file "/etc/bind/zone/195.110.6";
+	allow-query { any; };
+
+	// allow AXFR from ns4.nic.ru
+	//allow-transfer { localhost; 194.226.96.8; };
+};
+
+zone "yapet.net" {
+	type master;
+	file "/etc/bind/zone/yapet.net";
+	allow-query { any; };
+
+	// allow AXFR from ns4.nic.ru
+	allow-transfer { localhost; 194.226.96.8; };
+};

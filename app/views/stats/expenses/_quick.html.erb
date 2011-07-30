@@ -1,0 +1,27 @@
+<% unless @quick_stats.nil? %>
+<table id="quick_stats">
+  <caption><%=_("Totals")%></caption>
+  <tr>
+    <td><%= l(@quick_stats.this_month, :format => "%B") %></td>
+    <td class="cy"><%=cy @quick_stats.total_this_month %></td>
+  </tr>
+  <% if current_account.age > 1.month %>
+    <tr>
+      <td><%= l(@quick_stats.last_month, :format => "%B") %></td>
+      <td class="cy"><%=cy @quick_stats.total_last_month %></td>
+    </tr>
+  <% end %>
+  <% if current_account.age > 2.month %>
+    <tr>
+      <td colspan="2">
+        <%= link_to _("earlier..."), stats_expenses_path,
+            :class => "bgicon earlier" %>
+      </td>
+    </tr>
+  <% end %>
+  <tr class="totals">
+    <td><%=_("Total:")%></td>
+    <td class="cy"><%=cy @quick_stats.grand_total %></td>
+  </tr>
+</table>
+<% end %>

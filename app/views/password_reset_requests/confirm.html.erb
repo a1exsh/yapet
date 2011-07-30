@@ -1,0 +1,27 @@
+<h2><%=_("Password Reset")%></h2>
+<p>
+<%= _("Please enter your new password for %s") % @request.user.email %>
+</p>
+
+<% form_tag fulfill_password_reset_request_path(@request.code),
+   :method => :put, :id => "pw_reset_form" do %>
+<table class="settings-table">
+  <tbody>
+  <tr>
+    <td><%= label_tag "new_password", _("New Password") %></td>
+    <td><%= password_field_tag "new_password", nil, :onkeyup => "checkPasswordConfirmation();" %></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><%= label_tag "confirm_password", _("Confirm New Password") %></td>
+    <td><%= password_field_tag "confirm_password", nil, :onkeyup => "checkPasswordConfirmation();" %></td>
+    <td><div id="password-match-status" class="icon"></div></td>
+  </tr>
+  </tbody>
+  <tfoot>
+  <tr>
+    <td colspan="2"><%= submit_tag _("Change") %></td>
+  </tr>
+  </tfoot>
+</table>
+<% end %>

@@ -1,0 +1,1790 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: version 0.0.1\n"
+"POT-Creation-Date: 2010-11-09 09:56+0200\n"
+"PO-Revision-Date: 2010-05-12 11:46+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: app/helpers/invitations_helper.rb:8
+msgid "%d invites left"
+msgstr "Приглашений: %d"
+
+#: app/views/about/ssl/why.html.erb:27
+msgid "%s about your issue and we'll see how can we help you."
+msgstr ""
+"%s о вашей проблеме и мы посмотрим, что можно сделать, чтобы помочь вам."
+
+#: app/helpers/date_time_helper.rb:7
+msgid "%s ago"
+msgstr "%s назад"
+
+#: app/helpers/pagination_helper.rb:25
+msgid "&laquo;&nbsp;Prev."
+msgstr "&laquo;&nbsp;Пред."
+
+#: app/helpers/categories_helper.rb:7
+msgid "(All)"
+msgstr "(Все)"
+
+#: app/views/shared/_averages.html.erb:34
+msgid "* - estimated"
+msgstr "* - прогноз"
+
+#: app/views/shared/_footer.html.erb:4
+msgid "About"
+msgstr "О сайте"
+
+#: app/views/shared/_footer.html.erb:5
+msgid "About SSL"
+msgstr "Об использовании SSL"
+
+#: app/views/about/ssl/index.html.erb:7
+msgid "About SSL technology"
+msgstr "О технологии SSL"
+
+#: app/views/about/index.html.erb:1
+#: app/views/layouts/mail_notification.html.erb:12
+msgid "About YaPET"
+msgstr "О системе YaPET"
+
+#: app/views/invitations/show.html.erb:34
+msgid "Accept"
+msgstr "Принять"
+
+#: locale/model_attributes.rb:5
+msgid "Account|Paid till"
+msgstr "Оплачен до"
+
+#: app/views/settings/other_users/new.html.erb:2
+msgid "Add Users to Your Account"
+msgstr "Добавить пользователей учетной записи"
+
+#: app/views/settings/other_users/index.html.erb:54
+#: app/views/settings/_primary.html.erb:12
+msgid "Add more people"
+msgstr "Добавить пользователей"
+
+#: app/views/expenses/edit.html.erb:11
+msgid "Amount"
+msgstr "Сумма"
+
+#: app/views/shared/_averages.html.erb:24
+msgid "Annually"
+msgstr "В год"
+
+#: app/helpers/user_agent_helper.rb:35 app/helpers/user_agent_helper.rb:40
+#: app/helpers/user_agent_helper.rb:45
+msgid "Any OS"
+msgstr "Все ОС"
+
+#: app/views/about/index.html.erb:10
+msgid "Anywhere, anytime."
+msgstr "Где угодно, когда угодно."
+
+#: app/views/categories/_details_table.html.erb:44
+#: app/views/categories/_grid.html.erb:12
+msgid "Are you sure you want to remove this category?"
+msgstr "Вы уверены, что хотите удалить эту категорию?"
+
+#: app/views/expenses/index.html.erb:1
+msgid "Are you sure you want to remove this expense record?"
+msgstr "Вы уверены, что хотите удалить эту запись о расходах?"
+
+#: app/views/items/_grid.html.erb:69 app/views/items/show.html.erb:10
+msgid "Are you sure you want to remove this item?"
+msgstr "Вы уверены, что хотите удалить эту статью расходов?"
+
+#: app/helpers/invitations_helper.rb:5
+msgid "Ask for more"
+msgstr "Запросить"
+
+#: app/views/about/ssl/index.html.erb:2
+msgid "Attention, first time visiter!"
+msgstr "Вниманию новых посетителей!"
+
+#: app/views/shared/_averages.html.erb:6
+msgid "Averages"
+msgstr "В среднем"
+
+#: app/views/items/edit.html.erb:19 app/views/items/show.html.erb:16
+#: app/views/expenses/edit.html.erb:23 app/views/categories/edit.html.erb:19
+#: app/views/categories/show.html.erb:7
+msgid "Back"
+msgstr "Назад"
+
+#: app/views/invitations/show.html.erb:8
+msgid ""
+"Before completing your registration you may change your email\n"
+"address and pick a password (recommended):"
+msgstr ""
+"До завершения Вашей регистрации Вы можете изменить адрес email и выбрать "
+"пароль (рекомендуется):"
+
+#: app/views/shared/_footer.html.erb:2
+msgid "Blog"
+msgstr "Блог"
+
+#: app/views/shared/_sidebar.html.erb:24
+msgid "By Category"
+msgstr "По категориям"
+
+#: app/views/shared/_sidebar.html.erb:20
+msgid "By Date"
+msgstr "По дате"
+
+#: app/views/shared/_totals.html.erb:7
+msgid "By Month"
+msgstr "По месяцам"
+
+#: app/views/shared/_totals.html.erb:14
+msgid "By Year"
+msgstr "По годам"
+
+#: app/views/about/ssl/more.html.erb:23
+msgid "CACert.org"
+msgstr "CACert.org"
+
+#: app/helpers/in_place_i18n_helper.rb:6
+#: app/views/settings/other_users/remove.html.erb:17
+#: app/views/settings/emails/edit.html.erb:24
+#: app/views/settings/passwords/edit.html.erb:27
+msgid "Cancel"
+msgstr "Отменить"
+
+#: app/views/shared/_sidebar.html.erb:13
+msgid "Categories"
+msgstr "Категории"
+
+#: app/views/expenses/_uncategorized_item_popup.html.erb:16
+msgid "Categorize Item"
+msgstr "Введите категорию"
+
+#: app/views/items/_grid.html.erb:40 app/views/items/edit.html.erb:11
+#: app/views/stats/categories/_stats_table.html.erb:20
+msgid "Category"
+msgstr "Категория"
+
+#: app/views/items/_details_table.html.erb:20
+#: app/views/categories/_details_table.html.erb:7
+msgid "Category:"
+msgstr "Категория:"
+
+#: locale/virtual_attributes.rb:1
+msgid "Category|Parent"
+msgstr "Родительская категория"
+
+#: locale/virtual_attributes.rb:2
+msgid "Category|Parent title"
+msgstr "Название родительской категории"
+
+#: locale/model_attributes.rb:15
+msgid "Category|Title"
+msgstr "Название"
+
+#: app/views/about/ssl/why.html.erb:34
+msgid "Cause:"
+msgstr "Причина:"
+
+#: app/views/about/ssl/more.html.erb:18
+msgid "Certificate Authorities"
+msgstr "Центрами Сертификации"
+
+#: app/views/settings/emails/edit.html.erb:23
+#: app/views/settings/passwords/edit.html.erb:26
+#: app/views/password_reset_requests/confirm.html.erb:23
+msgid "Change"
+msgstr "Изменить"
+
+#: app/views/settings/emails/edit.html.erb:2
+#: app/views/settings/_primary.html.erb:5
+msgid "Change Email"
+msgstr "Изменить адрес"
+
+#: app/views/settings/passwords/edit.html.erb:2
+#: app/views/settings/_primary.html.erb:22
+msgid "Change Password"
+msgstr "Изменить пароль"
+
+#: app/helpers/user_agent_helper.rb:39 app/helpers/user_agent_helper.rb:49
+msgid "Chrome"
+msgstr ""
+
+#: app/views/home/dashboard.html.erb:18
+msgid ""
+"Click %s to change your password, email, add more users to your\n"
+"account or change other settings."
+msgstr ""
+"Щелкните по ссылке %s чтобы изменить пароль, адрес email, добавить новых "
+"пользователей к учетной записи, или изменить другие параметры."
+
+#: app/helpers/categories_helper.rb:20 app/helpers/categories_helper.rb:32
+msgid "Click for Category Statistics"
+msgstr "Щелкните, чтобы перейти к статистике для этой категории"
+
+#: app/views/expenses/_first_expense_guide.html.erb:4
+msgid "Click here to start tracking your expenses"
+msgstr "Щелкните сюда, чтобы начать учет расходов"
+
+#: app/views/expenses/index.html.erb:94
+msgid "Click here to view all Expenses"
+msgstr "Щелкните сюда, чтобы показать все записи"
+
+#: app/views/expenses/_expenses_guide.html.erb:28
+msgid ""
+"Click on the\n"
+"      &ldquo;uncategorized&rdquo; icon to enter an Item's category.\n"
+"      Entering a Category for an Item is just like entering the Item\n"
+"      title for an Expense: start typing to see suggestions."
+msgstr ""
+"Щелкните по иконке &laquo;без категории&raquo;, чтобы ввести категорию для "
+"статьи расходов.  Заполнение категории работает так же, как и введение "
+"названия статьи расхода: начните набирать название, чтобы увидеть варианты."
+
+#: app/views/about/ssl/_ssl_instructions.html.erb:15
+msgid ""
+"Click on the &ldquo;Root Certificate (PEM Format)&rdquo; link to\n"
+"download the encoded root certificate."
+msgstr ""
+"Щелкните на ссылке &laquo;Root Certificate (PEM Format)&raquo;, чтобы "
+"загрузить корневой сертификат."
+
+#: app/views/about/ssl/_ssl_instructions.html.erb:10
+msgid ""
+"Click on the &ldquo;Root Certificate&rdquo; link to the right to\n"
+"go to the root certificate download page:"
+msgstr ""
+"Щелкните на ссылке &laquo;Root Certificate&raquo; в правой части страницы, "
+"чтобы перейти к загрузке корневого сертификата:"
+
+#: app/views/expenses/_expenses_guide.html.erb:13
+msgid ""
+"Click on the &ldquo;comment&rdquo; field next to an Item title to\n"
+"      comment on the expense."
+msgstr ""
+"Щелкните по полю &laquo;коммент.&raquo; рядом с названием статьи расходов, "
+"чтобы ввести комментарий."
+
+#: app/views/expenses/_expenses_guide.html.erb:17
+msgid "Click on the Item title or Amount to edit it."
+msgstr ""
+"Щелкните по названию статьи расходов или затраченной сумме, чтобы изменить "
+"значение."
+
+#: app/views/expenses/_expenses_guide.html.erb:37
+msgid ""
+"Click on the date picker calendar icon to adjust the date of an entered "
+"expense if you like."
+msgstr "Щелкните по иконке выбора даты, чтобы изменить дату введенной записи."
+
+#: app/views/expenses/_expenses_guide.html.erb:21
+msgid ""
+"Click on the item icon left of an Item to\n"
+"        review it."
+msgstr ""
+"Щелкните по иконке статьи расходов слева ее от названия, чтобы просмотреть "
+"эту статью."
+
+#: app/views/expenses/_uncategorized_item_popup.html.erb:45
+msgid "Click to Categorize"
+msgstr "Щелкните, чтобы задать категорию"
+
+#: app/views/expenses/index.html.erb:34
+msgid "Click to adjust expense date"
+msgstr "Щелкните, чтобы изменить дату"
+
+#: app/helpers/in_place_i18n_helper.rb:4
+msgid "Click to edit"
+msgstr "Щелкните, чтобы изменить"
+
+#: app/helpers/expenses_helper.rb:5 app/views/items/_grid.html.erb:58
+msgid "Click to find matching Expenses"
+msgstr "Щелкните, чтобы найти записи о расходах"
+
+#: app/helpers/expenses_helper.rb:11
+msgid "Click to view Expense Statistics by Date"
+msgstr "Щелкните, чтобы перейти к статистике расходов по дате"
+
+#: app/helpers/categories_helper.rb:15
+#: app/views/items/_details_table.html.erb:24
+#: app/views/items/_grid.html.erb:34
+#: app/views/categories/_details_table.html.erb:29
+msgid "Click to view this Category"
+msgstr "Щелкните, чтобы перейти к этой категории"
+
+#: app/helpers/items_helper.rb:5
+msgid "Click to view this Item"
+msgstr "Щелкните, чтобы перейти к этой статье расходов"
+
+#: app/views/expenses/edit.html.erb:15
+msgid "Comment"
+msgstr "Комментарий"
+
+#: app/views/settings/passwords/edit.html.erb:18
+#: app/views/password_reset_requests/confirm.html.erb:16
+msgid "Confirm New Password"
+msgstr "Подтверждение"
+
+#: app/views/invitations/show.html.erb:25
+msgid "Confirm Password"
+msgstr "Подтвердите пароль"
+
+#: app/controllers/invitations_controller.rb:84
+msgid "Congratulations, you've been successfully registered!"
+msgstr "Поздравляем, Вы успешно зарегистрировались!"
+
+#: app/views/about/contacts.html.erb:1
+msgid "Contacts"
+msgstr "Связь"
+
+#: app/controllers/settings/other_users_controller.rb:100
+msgid ""
+"Could not send an invitation to this address.  Please check that the address "
+"is correct or retry later"
+msgstr ""
+"Приглашение не может быть отправлено на этот адрес.  Пожалуйста, проверьте "
+"правильность адреса или повторите попытку позднее"
+
+#: app/views/settings/passwords/edit.html.erb:8
+msgid "Current Password"
+msgstr "Текущий пароль"
+
+#: app/views/settings/other_users/index.html.erb:6
+msgid "Currently only you can access this account."
+msgstr "Эта учетная запись доступна только Вам."
+
+#: app/views/shared/_averages.html.erb:11
+msgid "Daily"
+msgstr "В день"
+
+#: app/views/home/dashboard.html.erb:1
+msgid "Dashboard"
+msgstr "Главная страница"
+
+#: app/models/expense.rb:26
+msgid "Date cannot be set to future"
+msgstr "Дата не может быть установлена в будущее"
+
+#: app/views/categories/edit.html.erb:1
+msgid "Editing category"
+msgstr "Изменить категорию"
+
+#: app/views/expenses/edit.html.erb:1
+msgid "Editing expense"
+msgstr "Изменить запись о расходах"
+
+#: app/views/items/edit.html.erb:1
+msgid "Editing item"
+msgstr "Изменить статью расходов"
+
+#: app/views/invitations/show.html.erb:14
+#: app/views/password_reset_requests/new.html.erb:9
+#: app/views/sessions/new.html.erb:4
+msgid "Email"
+msgstr "Адрес email"
+
+#: app/controllers/settings/emails_controller.rb:34
+msgid "Email address changed"
+msgstr "Адрес email изменен"
+
+#: app/controllers/password_reset_requests_controller.rb:33
+msgid ""
+"Email with instructions sent to %s.  If you didn't receive the message, "
+"please check your Spam folder or try again."
+msgstr ""
+"Письмо с инструкциями выслано на адрес %s.  Если вы не получили сообщение, "
+"проверьте папку Спам (подозрительные письма) или попробуйте еще раз."
+
+#: app/views/settings/_primary.html.erb:4
+#: app/views/invitations/new.html.erb:16
+msgid "Email:"
+msgstr "Адрес email:"
+
+#: app/views/home/dashboard.html.erb:22
+msgid "Enjoy your stay."
+msgstr "Приятного пользования!"
+
+#: app/views/home/index.html.erb:20
+msgid "Enter Sandbox"
+msgstr "Войти в песочницу"
+
+#: app/views/expenses/_first_expense_guide.html.erb:27
+msgid ""
+"Enter any positive numerical value for the amount.\n"
+"          You may use two digits after the decimal point to denote,\n"
+"          e.g. cents."
+msgstr ""
+"Введите любое положительное число в графе &laquo;Сколько&raquo;.  "
+"Используйте точку или запятую для отделения дробных величин, например: "
+"рублей и копеек."
+
+#: app/views/categories/_grid.html.erb:11
+msgid "Enter new category"
+msgstr "Новая категория"
+
+#: app/views/expenses/index.html.erb:6
+msgid "Enter new expense"
+msgstr "Новая запись"
+
+#: app/views/items/_grid.html.erb:15
+msgid "Enter new item"
+msgstr "Новая статья расходов"
+
+#: app/views/about/ssl/_ssl_chrome_any.html.erb:12
+msgid ""
+"Examine the presented certificate by clicking the\n"
+"&ldquo;Details&rdquo; tab.  If everything seems correct, click the\n"
+"&ldquo;Install Certificate&rdquo; button on the first tab and follow\n"
+"the &ldquo;Import Certificate Wizard&rdquo; steps."
+msgstr ""
+"Просмотрите данные сертификата, щелкнув по закладке &laquo;Details&raquo;.  "
+"Если все в порядке, нажмите кнопку &laquo;Install Certificate&raquo; на "
+"первой закладке и следуйте инструцкиям &laquo;Мастера импорта "
+"сертификатов&raquo;."
+
+#: app/views/about/ssl/_ssl_firefox.html.erb:7
+msgid ""
+"Examine the presented certificate by clicking the\n"
+"&ldquo;View&rdquo; button.  If everything seems correct, check the\n"
+"&ldquo;Trust this CA to identify web sites&rdquo; option only before\n"
+"clicking the OK button."
+msgstr ""
+"Просмотрите данные сертификата, щелкнув по кнопке &laquo;View&raquo;.  Если "
+"все в порядке, отметьте галочкой только лишь пункт &laquo;Trust this CA to "
+"identify web sites&raquo; (доверять этому Центру Сертификации при проверке "
+"подлинности веб-сайтов) и нажмите конпку OK."
+
+#: app/views/about/ssl/_ssl_safari.html.erb:12
+msgid ""
+"Examine the presented certificate by clicking the &ldquo;View\n"
+"Certificates&rdquo; button.  If everything seems correct, click the OK\n"
+"button to install the certificate."
+msgstr ""
+"Просмотрите данные сертификата, щелкнув по кнопке &laquo;View "
+"Certificates&raquo;.  Если все в порядке, нажмите кнопку OK, чтобы "
+"установить сертификат."
+
+#: app/views/stats/categories/_stats_table.html.erb:4
+msgid "Expense Statistics by Category"
+msgstr "Статистика расходов по категориям"
+
+#: app/views/items/_grid.html.erb:85 app/views/shared/_sidebar.html.erb:5
+msgid "Expenses"
+msgstr "Расходы"
+
+#: app/views/stats/expenses/index.html.erb:2
+msgid "Expenses Statistics by Date"
+msgstr "Статистика расходов по дате"
+
+#: locale/model_attributes.rb:7
+msgid "Expense|Amount"
+msgstr "Количество"
+
+#: locale/model_attributes.rb:8
+msgid "Expense|Comment"
+msgstr "Комментарий"
+
+#: locale/virtual_attributes.rb:3
+msgid "Expense|Item title"
+msgstr "Название статьи расходов"
+
+#: app/helpers/user_agent_helper.rb:34
+msgid "Firefox"
+msgstr ""
+
+#: app/views/about/index.html.erb:21
+msgid ""
+"Following a good old %s tradition, YaPET is a %s for\n"
+"     &ldquo;YaPET: a Personal Expense Tracker&rdquo;."
+msgstr ""
+"Следуя старой доброй %s традиции, YaPET является %s от &laquo;YaPET: a "
+"Personal Expense Tracker&raquo;."
+
+#: app/views/about/index.html.erb:26
+msgid ""
+"Following another common approach the &ldquo;Ya&rdquo; prefix may\n"
+"be thought of as &ldquo;Yet another&rdquo;.  I'm not opposed to this\n"
+"particular interpretation and nothing stops you from deriving your\n"
+"own, if you have some imagination. :)"
+msgstr ""
+"С другой стороны, префикс &laquo;Ya&raquo; также нередко используется для "
+"сокращения от &laquo;Yet another&raquo; (т.е. &laquo;еще один&raquo;).  Я не "
+"против такого истолкования, и любой желающий при наличии воображения может "
+"придумать свою расшифровку. :)"
+
+#: app/views/shared/_search_terms.html.erb:5
+msgid "For &ldquo;%s&rdquo;"
+msgstr "Для &laquo;%s&raquo;"
+
+#: app/views/sessions/new.html.erb:22
+msgid "Forgot your password?"
+msgstr "Забыли пароль?"
+
+#: app/views/home/dashboard.html.erb:11
+msgid ""
+"From here you can list or enter new %s, review or categorize\n"
+"entered %s and %s, or study some %s.  These options are also accessible from "
+"the\n"
+"navigation panel anywhere on the site."
+msgstr ""
+"С этой страницы вы можете перейти к просмотру %s, %s и %s или изучить %s.  "
+"Эти опции также доступны в навигационной панели на любой странице сайта."
+
+#: app/views/items/show.html.erb:4
+#: app/views/categories/_details_table.html.erb:10
+msgid "General"
+msgstr "Общие данные"
+
+#: app/views/shared/_header.html.erb:8
+msgid "Give me real account!"
+msgstr "Хочу настоящий аккаунт!"
+
+#: app/views/settings/other_users/index.html.erb:57
+#: app/views/settings/other_users/remove.html.erb:21
+#: app/views/settings/other_users/new.html.erb:69
+msgid "Go back to settings"
+msgstr "Вернуться к настройке"
+
+#: app/views/password_reset_requests/show.html.erb:1
+msgid "Go to login page"
+msgstr "На страницу логина"
+
+#: app/views/stats/expenses/index.html.erb:36
+#: app/views/stats/categories/_stats_table.html.erb:58
+#: app/views/shared/_totals.html.erb:19
+msgid "Grand Total:"
+msgstr "Общий итог:"
+
+#: app/views/mail_notifier/invitation_notification.text.html.erb:1
+#: app/views/mail_notifier/added_user_notification.text.html.erb:1
+#: app/views/mail_notifier/created_new_user_notification.text.html.erb:1
+#: app/views/home/index.html.erb:1
+msgid "Hello there!"
+msgstr "Здравствуйте!"
+
+#: app/views/invitations/show.html.erb:5
+msgid "Hello, %s!"
+msgstr "Здравствуйте, %s!"
+
+#: app/views/about/ssl/why.html.erb:3
+msgid "Here are some possible reasons:"
+msgstr "Ниже перечислены возможные причины:"
+
+#: app/views/mail_notifier/invitation_notification.text.html.erb:8
+msgid "Here's the comment from this user:"
+msgstr "Вот комментарий от этого пользователя:"
+
+#: app/views/mail_notifier/added_user_notification.text.html.erb:3
+msgid "Hey, %s invites you to share his %s account!"
+msgstr ""
+"Здравствуйте, %s предлагает Вам совместное управление его учетной записью в %"
+"s!"
+
+#: app/views/mail_notifier/invitation_notification.text.html.erb:3
+msgid "Hey, %s invites you to try %s!"
+msgstr "Пользователь %s приглашает Вас попробовать %s!"
+
+#: app/views/expenses/_toggle_show_guide_link.html.erb:2
+msgid "Hide Guide"
+msgstr "Скрыть"
+
+#: app/views/expenses/_first_expense_guide.html.erb:32
+msgid ""
+"Hit TAB to go to the next entry field.  Hit ENTER or\n"
+"          click the submit icon at any time to save the record."
+msgstr ""
+"Используйте кнопку табуляции для перехода к следующему полю.  Нажмите Ввод в "
+"любом из полей или щелкните соответствующую иконку, для того чтобы сохранить "
+"запись."
+
+#: app/views/about/ssl/index.html.erb:28
+msgid ""
+"I've already installed CACert.org as a trusted\n"
+"Certificate Authority (or I'd like to proceed without installing\n"
+"it)"
+msgstr ""
+"У меня уже установлен сертификат CACert.org (или я хочу продолжить без "
+"установки сертификата)"
+
+#: app/views/invitations/show.html.erb:40
+msgid ""
+"If you don't enter a password, a random one will be generated\n"
+"and sent to the specified email address."
+msgstr ""
+"Если Вы не введете пароль, он будет сгенерирован случайным образом и выслан "
+"Вам на указанный адрес email."
+
+#: app/views/mail_notifier/invitation_notification.text.html.erb:19
+msgid ""
+"If you don't want to accept this invitation there's no need to do\n"
+"anything specific&mdash;it will expire automatically within a week."
+msgstr ""
+"Если Вы не хотите принимать это приглашение, Вам не нужно ничего делать&nbsp;"
+"&mdash; оно автоматически прекратит свое действие в течение недели."
+
+#: app/views/home/index.html.erb:14
+msgid ""
+"If you would like to try using the site in a\n"
+"&ldquo;sandbox&rdquo;, please use the link below.  Sandbox accounts\n"
+"are only valid for one day or until you close your browser or logout.\n"
+"You may have as many sandboxes as you want."
+msgstr ""
+"Если вы все же хотите попробовать сайт в режиме &laquo;песочницы&raquo;, "
+"воспользуйтесь ссылкой ниже.  Песочница действует в течение суток, пока сайт "
+"открыт в вашем браузере или пока вы не выйдете из нее.  Вы можете создать "
+"столько песочниц, сколько пожелаете."
+
+#: app/views/shared/_search_terms.html.erb:12
+msgid "In %s"
+msgstr "За %s"
+
+#: app/views/about/ssl/_ssl_chrome_x11.html.erb:2
+msgid ""
+"In Chrome, on Unix-like systems there's currently no GUI for\n"
+"importing security certificates.  You can go to &ldquo;Options ->\n"
+"Under the Hood&rdquo; and click the &ldquo;Manage Certificates&rdquo;\n"
+"link, like shown here:"
+msgstr ""
+"В браузере Chrome на Unix-подобных системах в настоящее время нет "
+"графического интерфейса для импорта сертификатов безопасности.  Вы можете "
+"выбрать в опциях настройки закладку &laquo;Under the Hood&raquo; и щелкнуть "
+"по ссылке &laquo;Manage Certificates&raquo;, как показано на картинке:"
+
+#: app/views/about/ssl/_ssl_chrome_any.html.erb:2
+msgid ""
+"In Chrome, on Windows or Mac OS X you should open the downloaded\n"
+"certificate file by double clicking on it.  The system-dependent\n"
+"dialog box will appear, in which you can examine and install the\n"
+"certificate."
+msgstr ""
+"В браузере Chrome на системах Windows или Mac OS X вам следует открыть "
+"загруженный файл сертификата, дважды щелкнув на нем.  Системой будет "
+"показано диалоговое окно, в котором вы сможете просмотреть данные "
+"сертификата и установить его."
+
+#: app/views/about/ssl/_ssl_firefox.html.erb:2
+msgid ""
+"In Firefox, you should see a dialog window like this,\n"
+"immediately after clicking the certificate link:"
+msgstr ""
+"В браузере Firefox, вы должны увидеть следующее окно сразу при нажатии "
+"ссылки сертификата:"
+
+#: app/views/about/ssl/_ssl_safari.html.erb:2
+msgid ""
+"In Safari, on Mac OS X or Windows you should open the downloaded\n"
+"certificate file by double clicking on it.  The system-dependent\n"
+"dialog box will appear, in which you can examine and install the\n"
+"certificate."
+msgstr ""
+"В браузере Safari на системах Mac OS X или Windows вам следует открыть "
+"загруженный файл сертификата, дважды щелкнув на нем.  Системой будет "
+"показано диалоговое окно, в котором вы сможете просмотреть данные "
+"сертификата и установить его."
+
+#: app/views/shared/_search_terms.html.erb:8
+msgid "In category &ldquo;%s&rdquo;"
+msgstr "В категории &laquo;%s&raquo;"
+
+#: app/views/about/ssl/_ssl_other.html.erb:2
+msgid ""
+"In general, to install the security certificate on other\n"
+"browsers and/or operating systems you'll need to consult your browser\n"
+"documentation."
+msgstr ""
+"В общем случае, чтобы установить сертификат безопасности в других браузерах "
+"и/или операционных системах вам следует обратиться к документации по вашему "
+"браузеру."
+
+#: app/views/about/ssl/_ssl_instructions.html.erb:20
+msgid "Instructions for:"
+msgstr "Инструкции для:"
+
+#: app/views/settings/_interface.html.erb:2
+msgid "Interface"
+msgstr "Внешний вид"
+
+#: app/views/settings/_interface.html.erb:7
+msgid "Interface Language"
+msgstr "Язык интерфейса"
+
+#: app/controllers/password_reset_requests_controller.rb:69
+#: app/controllers/application.rb:69
+#: app/controllers/settings/passwords_controller.rb:32
+msgid "Internal Server Error"
+msgstr "Сбой на сервере"
+
+#: app/controllers/expenses_controller.rb:20
+msgid "Invalid date format"
+msgstr "Неверный формат даты"
+
+#: app/controllers/invitations_controller.rb:42
+msgid "Invalid email or this user is already invited."
+msgstr "Введен неверный адрес email, либо этот пользователь уже приглашен."
+
+#: app/views/invitations/new.html.erb:1
+msgid "Invitation Preview"
+msgstr "Предпросмотр приглашения"
+
+#: app/views/settings/other_users/new.html.erb:18
+msgid "Invitation email sent to:"
+msgstr "Приглашения высланы:"
+
+#: app/controllers/invitations_controller.rb:33
+msgid "Invitation sent."
+msgstr "Приглашение выслано."
+
+#: app/models/mail_notifier.rb:41
+msgid "Invitation to YaPET"
+msgstr "Приглашение в YaPET"
+
+#: app/views/invitations/_quick.html.erb:17
+msgid "Invite a friend:"
+msgstr "Пригласить друга:"
+
+#: app/views/about/ssl/index.html.erb:4
+msgid ""
+"It appears that you visit this site for the first time on this computer."
+msgstr "Похоже, что вы в первый раз зашли на этот сайт с данного компьютера."
+
+#: app/views/expenses/edit.html.erb:7
+msgid "Item"
+msgstr "Статья расхода"
+
+#: app/views/items/show.html.erb:1
+msgid "Item Details"
+msgstr "Информация о статье расходов"
+
+#: app/views/shared/_sidebar.html.erb:9
+msgid "Items"
+msgstr "Статьи расходов"
+
+#: app/views/categories/show.html.erb:24
+msgid "Items in This Category"
+msgstr "Статьи расходов в этой категории"
+
+#: locale/virtual_attributes.rb:4
+msgid "Item|Category title"
+msgstr "Название категории"
+
+#: locale/model_attributes.rb:3
+msgid "Item|Title"
+msgstr "Название"
+
+#: app/views/about/ssl/why.html.erb:1
+msgid "Keep getting that SSL warning page, huh?"
+msgstr "Продолжаете попадать на страницу предупреждения SSL?"
+
+#: app/views/invitations/new.html.erb:20
+msgid "Language:"
+msgstr "Язык:"
+
+#: app/views/settings/other_users/new.html.erb:5
+msgid ""
+"List as many email addresses as you need below.  These people will\n"
+"receive a mail with instructions to activate their email and after\n"
+"that you will share this account with them."
+msgstr ""
+"Перечислитие необходимое количество адресов email ниже.  Все адресаты "
+"получат уведомления с инструкциями для активации, и после этого вы сможете "
+"использовать данную учетную запись совместно."
+
+#: app/views/expenses/index.html.erb:12
+msgid "Listing search results"
+msgstr "Показаны результаты поиска"
+
+#: app/views/shared/_header.html.erb:27
+msgid "Log in"
+msgstr "Войти"
+
+#: app/views/shared/_header.html.erb:16
+msgid "Log out"
+msgstr "Выйти"
+
+#: app/controllers/sessions_controller.rb:22
+msgid "Login invalid"
+msgstr "Неверный email или пароль"
+
+#: app/controllers/settings/passwords_controller.rb:26
+msgid "Mistyped current password"
+msgstr "Неверный текущий пароль"
+
+#: app/controllers/settings/emails_controller.rb:26
+msgid "Mistyped password"
+msgstr "Неверный пароль"
+
+#: app/helpers/date_time_helper.rb:5
+msgid "Moments ago"
+msgstr "Только что"
+
+#: app/views/stats/expenses/index.html.erb:11
+msgid "Month"
+msgstr "Месяц"
+
+#: app/views/shared/_averages.html.erb:16
+msgid "Monthly"
+msgstr "В месяц"
+
+#: app/views/about/ssl/more.html.erb:26
+msgid ""
+"Most browsers come with several Certificate Authorities' root\n"
+"certificates pre-installed.  Unfortunately, %s used by this site is\n"
+"not among them, so you'll need to obtain the CACert's Root Certificate\n"
+"and install it as a trusted Certificate Authority in your browser.\n"
+"The required procedure is described in detail here: %s"
+msgstr ""
+"Большинство браузеров поставляются с предустановленными корневыми "
+"сертификатами различных Центров Сертификации.  К сожалению, %s, используемый "
+"этим сайтом, не в их числе.  Поэтому вам следует загрузить и установить "
+"Корневой Сертификиат CACert.org в качестве доверенного Центра Сертификации в "
+"вашем браузере.  Необходимая процедура описана подробнее здесь: %s"
+
+#: app/views/settings/emails/edit.html.erb:16
+msgid "New Email"
+msgstr "Новый адрес"
+
+#: app/views/settings/passwords/edit.html.erb:13
+#: app/views/password_reset_requests/confirm.html.erb:11
+msgid "New Password"
+msgstr "Новый пароль"
+
+#: app/helpers/pagination_helper.rb:26
+msgid "Next&nbsp;&raquo;"
+msgstr "След.&nbsp;&raquo;"
+
+#: app/views/categories/show.html.erb:26
+msgid "No Items in This Category"
+msgstr "В этой категории нет статей расходов"
+
+#: app/views/categories/show.html.erb:15
+msgid "No Subcategories"
+msgstr "Нет подкатегорий"
+
+#: app/helpers/invitations_helper.rb:4
+msgid "No invites left."
+msgstr "Приглашений не осталось."
+
+#: app/views/invitations/_not_found.html.erb:1
+msgid "Not Found"
+msgstr "Не найдено"
+
+#: app/controllers/settings_controller.rb:27
+msgid "Not saved!"
+msgstr "Не сохранено!"
+
+#: app/views/categories/show.html.erb:38
+msgid "Nothing spent on this Category."
+msgstr "Нет записей о расходах на эту категорию."
+
+#: app/views/items/show.html.erb:27
+msgid "Nothing spent on this Item."
+msgstr "Нет записей о расходах на эту статью."
+
+#: app/views/expenses/index.html.erb:19
+msgid "Now"
+msgstr "Сейчас"
+
+#: app/views/expenses/_first_expense_guide.html.erb:37
+msgid "Now go on, give it a try!"
+msgstr "Пора попробовать!"
+
+#: app/views/about/ssl/_ssl_instructions.html.erb:62
+msgid ""
+"Now you should be able to verify this site connection and login\n"
+"securely:"
+msgstr ""
+"Теперь вы сможете убедиться в защищенности соединения с этим сайтом и войти "
+"без опасений:"
+
+#: app/helpers/in_place_i18n_helper.rb:5
+#: app/views/password_reset_requests/new.html.erb:11
+#: app/views/sessions/new.html.erb:17
+msgid "OK"
+msgstr "OK"
+
+#: app/views/about/ssl/_ssl_safari.html.erb:8
+msgid "On Mac OS X you'll see a dialog box like this:"
+msgstr "В системе Mac OS X вы должны увидеть следующее диалоговое окно:"
+
+#: app/views/about/ssl/_ssl_other.html.erb:7
+msgid ""
+"On Windows and Mac OS X the system presents a dialog to import\n"
+"the certificate when you double click on it."
+msgstr ""
+"В Windows и Mac OS X операционная система показывает диалоговое окно, "
+"позволяющее импортировать сертификат, когда вы дважды щелкаете на него."
+
+#: app/views/about/ssl/_ssl_chrome_any.html.erb:8
+msgid "On Windows you'll see a dialog box like this:"
+msgstr "В системе Windows вы должны увидеть следующее диалоговое окно:"
+
+#: app/views/settings/other_users/remove.html.erb:9
+msgid ""
+"Once removed the above user\n"
+"won't be able to list, add or remove expenses, items, etc. on this\n"
+"account unless you decide to re-add him or her to your account again."
+msgstr ""
+"После удаления данный пользователь не сможет просматривать, добавлять или "
+"удалять записи в вашей учетной записи, пока вы не решите добавить его снова."
+
+#: app/views/settings/other_users/index.html.erb:48
+msgid "Only account owner can add or remove users on this account."
+msgstr ""
+"Только владелец учетной записи может добавлять и удалять пользователей."
+
+#: app/views/settings/other_users/new.html.erb:10
+msgid ""
+"Only add people you trust!  That\n"
+"is, your spouse and/or other family members.  They will have the same\n"
+"permissions as you do and could list, edit, create new or remove\n"
+"existing expenses, items, etc. on this account."
+msgstr ""
+"Добавляйте только тех, кому доверяете!  Например, супруге(у) или другим "
+"членам семьи.  Эти пользователи смогут просматривать, изменять и удалять "
+"записи о расходах, статьях расходов и т.д. в данной учетной записи."
+
+#: app/views/settings/_primary.html.erb:11
+msgid "Only you can access this account."
+msgstr "Эта учетная запись доступна только Вам."
+
+#: app/helpers/user_agent_helper.rb:54 app/helpers/user_agent_helper.rb:55
+msgid "Other"
+msgstr "Другое"
+
+#: app/views/settings/other_users/index.html.erb:10
+msgid "Other people who can access this account:"
+msgstr "Пользователи, которые также имеют доступ к этой учетной записи:"
+
+#: app/views/about/index.html.erb:32
+msgid "Our mascot"
+msgstr "Наш талисман"
+
+#: app/views/about/index.html.erb:41 app/views/home/dashboard.html.erb:26
+msgid "Our mascot, kangaroo Petya"
+msgstr "Талисман сайта, кенгуру Петя"
+
+#: app/views/settings/emails/edit.html.erb:11
+#: app/views/invitations/show.html.erb:19 app/views/sessions/new.html.erb:8
+msgid "Password"
+msgstr "Пароль"
+
+#: app/views/password_reset_requests/confirm.html.erb:1
+msgid "Password Reset"
+msgstr "Сброс пароля"
+
+#: app/views/password_reset_requests/new.html.erb:1
+msgid "Password Reset Request"
+msgstr "Запрос на сброс пароля"
+
+#: app/controllers/password_reset_requests_controller.rb:72
+#: app/controllers/settings/passwords_controller.rb:34
+msgid "Password changed"
+msgstr "Пароль изменен"
+
+#: app/controllers/password_reset_requests_controller.rb:64
+#: app/controllers/settings/passwords_controller.rb:28
+msgid "Password confirmation does not match new password"
+msgstr "Подтверждение пароля не совпадает с новым паролем"
+
+#: app/controllers/invitations_controller.rb:70
+msgid "Password doesn't match confirmation"
+msgstr "Пароль не совпадает с подтверждением"
+
+#: app/models/mail_notifier.rb:31
+msgid "Password reset request for your YaPET account"
+msgstr "Запрос на сброс пароля к Вашей учетной записи в системе YaPET"
+
+#: app/views/settings/emails/edit.html.erb:4
+msgid ""
+"Please enter your current password to change your email\n"
+"address."
+msgstr "Пожалуйста, введите текущий пароль для изменения адреса email."
+
+#: app/views/password_reset_requests/confirm.html.erb:3
+msgid "Please enter your new password for %s"
+msgstr "Пожалуйста, введите ваш новый пароль для %s"
+
+#: app/controllers/password_reset_requests_controller.rb:20
+msgid "Please specify a valid email address"
+msgstr "Введите корректный адрес email"
+
+#: app/views/password_reset_requests/new.html.erb:3
+msgid ""
+"Please specify an email address to which the password reset\n"
+"instructions will be sent."
+msgstr ""
+"Пожалуйста, укажите адрес email, на который будут высланы инструкции по "
+"сбросу пароля."
+
+#: app/views/invitations/_quick.html.erb:32
+msgid "Preview"
+msgstr "Просмотр"
+
+#: app/views/invitations/new.html.erb:37
+msgid "Preview Again"
+msgstr "Просмотреть снова"
+
+#: app/views/settings/_primary.html.erb:2
+msgid "Primary"
+msgstr "Основное"
+
+#: app/views/settings/_interface.html.erb:17
+msgid "Records per Page"
+msgstr "Число записей на странице"
+
+#: app/helpers/pagination_helper.rb:63
+msgid "Records per Page:"
+msgstr "Записей на странице:"
+
+#: app/views/sessions/new.html.erb:15
+msgid "Remember me"
+msgstr "Запомнить"
+
+#: app/views/items/show.html.erb:9
+#: app/views/settings/other_users/remove.html.erb:16
+#: app/views/categories/_details_table.html.erb:43
+msgid "Remove"
+msgstr "Удалить"
+
+#: app/views/settings/other_users/remove.html.erb:2
+msgid "Remove User from Your Account"
+msgstr "Удаление пользователя из учетной записи"
+
+#: app/views/items/_grid.html.erb:65
+msgid ""
+"Removing this item will also remove %d associated expense records.\n"
+"\n"
+msgstr ""
+"Удаление этой статьи расходов повлечет удаление %d записей о расходах.\n"
+"\n"
+
+#: app/views/mail_notifier/password_reset_request.text.html.erb:1
+msgid "Reset your YaPET account password"
+msgstr "Сброс пароля в системе YaPET"
+
+#: app/views/about/ssl/more.html.erb:6
+msgid "SSL"
+msgstr ""
+
+#: app/views/about/ssl/more.html.erb:1
+msgid "SSL certificates and authorities"
+msgstr "Сертификаты SSL и Центры Сертификации"
+
+#: app/helpers/user_agent_helper.rb:44
+msgid "Safari"
+msgstr ""
+
+#: app/views/settings/_interface.html.erb:30
+msgid "Save"
+msgstr "Сохранить"
+
+#: app/helpers/in_place_i18n_helper.rb:7
+msgid "Saving..."
+msgstr "Сохраняется..."
+
+#: app/views/invitations/_quick.html.erb:30
+#: app/views/invitations/new.html.erb:35
+msgid "Send"
+msgstr "Послать"
+
+#: app/views/settings/other_users/new.html.erb:57
+msgid "Send invitations"
+msgstr "Выслать приглашения"
+
+#: app/helpers/pagination_helper.rb:30
+#: app/views/settings/other_users/index.html.erb:1
+#: app/views/settings/other_users/remove.html.erb:1
+#: app/views/settings/other_users/new.html.erb:1
+#: app/views/settings/emails/edit.html.erb:1
+#: app/views/settings/passwords/edit.html.erb:1
+#: app/views/settings/edit.html.erb:1 app/views/shared/_header.html.erb:14
+#: app/views/home/dashboard.html.erb:16
+msgid "Settings"
+msgstr "Настройка"
+
+#: app/controllers/settings_controller.rb:25
+msgid "Settings saved"
+msgstr "Изменения сохранены"
+
+#: app/views/settings/_primary.html.erb:16
+msgid "Show"
+msgstr "Показать"
+
+#: app/views/settings/_interface.html.erb:22
+#: app/views/expenses/_toggle_show_guide_link.html.erb:1
+msgid "Show Guide"
+msgstr "Подсказка"
+
+#: app/views/about/ssl/index.html.erb:48
+msgid "Show Instructions"
+msgstr "Показать инструкции"
+
+#: app/views/items/show.html.erb:34 app/views/categories/show.html.erb:45
+msgid "Show in Categories"
+msgstr "Показать среди категорий"
+
+#: app/views/items/show.html.erb:31 app/views/categories/show.html.erb:42
+msgid "Show in Category: %s"
+msgstr "Показать в категории: %s"
+
+#: app/views/settings/other_users/new.html.erb:66
+msgid "Show people already on this account"
+msgstr "Показать пользователей этой учетной записи"
+
+#: app/views/expenses/_first_expense_guide.html.erb:12
+msgid ""
+"So this is the first time you enter an expense record.  Let\n"
+"        us guide you through..."
+msgstr ""
+"Похоже, что Вы в первый раз пробуете создать запись о расходах.  Позвольте "
+"помочь вам в этом..."
+
+#: app/views/about/ssl/why.html.erb:38
+msgid "Solution:"
+msgstr "Решение:"
+
+#: app/controllers/invitations_controller.rb:39
+msgid "Sorry, no invitations left."
+msgstr "Извините, у Вас не осталось приглашений."
+
+#: app/views/expenses/_expenses_guide.html.erb:5
+msgid ""
+"Start typing an Item name in the entry field to see\n"
+"      suggestions."
+msgstr "Начните набирать название статьи расхода, чтобы увидеть варианты."
+
+#: app/views/items/show.html.erb:20 app/views/shared/_sidebar.html.erb:17
+#: app/views/categories/show.html.erb:9 app/views/categories/show.html.erb:32
+msgid "Statistics"
+msgstr "Статистика"
+
+#: app/views/categories/show.html.erb:13
+msgid "Subcategories"
+msgstr "Подкатегории"
+
+#: app/views/categories/_grid.html.erb:29
+#: app/views/categories/edit.html.erb:11
+msgid "Subcategory of"
+msgstr "Подкатегория в"
+
+#: app/views/categories/_details_table.html.erb:25
+msgid "Subcategory of:"
+msgstr "Подкатегория в:"
+
+#: app/views/about/ssl/index.html.erb:56
+msgid "Tell me more about SSL certificates and certificate authorities"
+msgstr "Подробнее о сертификатах SSL и Центрах Сертификации"
+
+#: app/views/about/ssl/more.html.erb:3
+msgid ""
+"The %s technology allows you as a website client to communicate\n"
+"securely with the web server, minimizing the risk of a third-party\n"
+"intercepting or substituting your sensitive data."
+msgstr ""
+"Технология %s позволяет вам, как пользователю веб-сайта, общаться с веб-"
+"сервером посредством защищенного соединения, тем самым снижая риск того, что "
+"злоумышленники могут перехватить или изменить ваши личные данные."
+
+#: app/views/expenses/_first_expense_guide.html.erb:16
+msgid ""
+"The entry fields should appear above which allow you to\n"
+"        enter what you've spent on today&nbsp;(Item title) and how\n"
+"        much did that cost you&nbsp;(Amount)."
+msgstr ""
+"Наверху страницы должны появиться поля для ввода, куда вы можете ввести на "
+"<em>Что</em> были потрачены средства и <em>Сколько</em> это стоило."
+
+#: app/views/about/ssl/_ssl_chrome_x11.html.erb:9
+msgid ""
+"The link will bring you to this page: %s, where you can read\n"
+"about using the command line to install the certificate on your\n"
+"system."
+msgstr ""
+"По ссылке откроется следующая страница: %s, на которой вы сможете узнать как "
+"воспользоваться командной строкой для установки сертификата в вашу систему."
+
+#: app/views/about/index.html.erb:34
+msgid ""
+"The project mascot is a kangaroo named Petya (Russian for Pete).\n"
+"I love to play with words, and you may have noticed how the\n"
+"&ldquo;ya&rdquo; prefix hopped from start in the project name to the end\n"
+"in our mascot name."
+msgstr ""
+"Талисман проекта&nbsp;&mdash; кенгуру Петя.  Мне нравится играть со словами, "
+"и, как вы уже наверняка заметили, буква &laquo;Я&raquo; из начала слова в "
+"названии проекта перепрыгнула в конец имени нашего талисмана."
+
+#: app/views/invitations/_not_found.html.erb:3
+msgid ""
+"The requested invitation was not found on the server.  It might\n"
+"have expired or you've mistyped the URL."
+msgstr ""
+"Запрошенное приглашение не найдено.  Возможно, оно устарело, либо вы ввели "
+"неверный адрес URL."
+
+#: app/controllers/resource_controller.rb:112
+msgid ""
+"The requested record was not found.  It may have been removed or you have "
+"mistyped the URL."
+msgstr ""
+"Запрошенная запись не найдена.  Возможно, она была удалена, либо вы ввели "
+"неверный адрес URL."
+
+#: app/controllers/password_reset_requests_controller.rb:25
+msgid "The specified email address is not registered"
+msgstr "Указанный адрес email не зарегестрирован в системе"
+
+#: app/views/settings/other_users/new.html.erb:26
+msgid ""
+"There were some problems while sending invitation emails for below\n"
+"users.  Please check if entered addresses are correct and try\n"
+"re-sending invitations if necessary."
+msgstr ""
+"При попытке отправить приглашения следующим пользователям возникли "
+"проблемы.  Пожалуйста, проверьте правильность введенных адресов и запросите "
+"повторные приглашения, если необходимо."
+
+#: app/views/settings/_primary.html.erb:15
+msgid "There's other people who can access this account."
+msgstr "Эта учетная запись доступна и другим пользователям."
+
+#: app/views/settings/other_users/index.html.erb:41
+msgid ""
+"These people can list, edit, create new or remove existing expenses,\n"
+"items, etc. on this account."
+msgstr ""
+"Эти пользователи могут просматривать, изменять и удалять записи о расходах, "
+"статьях расходов и т.д. в данной учетной записи."
+
+#: app/views/invitations/show.html.erb:44
+msgid ""
+"These settings can also be changed later at any time once\n"
+"you've successfully logged in."
+msgstr ""
+"Это также можно изменить в любой момент после успешного входа в систему."
+
+#: app/views/home/index.html.erb:6
+msgid ""
+"This application will help you keep track of your expenses,\n"
+"understand them and reduce your monthly costs."
+msgstr ""
+"Это онлайн-приложение позволит вам следить за расходами и поможет сократить "
+"ваши ежемесячные затраты."
+
+#: app/controllers/password_reset_requests_controller.rb:44
+msgid ""
+"This password reset request is invalid (it might have expired).  Please fill "
+"the new request below. "
+msgstr ""
+"Данный запрос на сброс пароля не зарегестрирован (возможно, истек срок его "
+"действия).  Пожалуйста, выполните новый запрос."
+
+#: app/views/mail_notifier/password_reset_request.text.html.erb:12
+msgid ""
+"This password reset request is valid for a single day.  If you didn't\n"
+"request the password reset, you may ignore this message."
+msgstr ""
+"Данный запрос на сброс пароля действителен в течение одного дня.  Если Вы не "
+"запрашивали сброс пароля, можете смело игнорировать это письмо."
+
+#: app/views/about/ssl/index.html.erb:11
+msgid ""
+"This site uses SSL technology to secure communications between\n"
+"you and the server.  The SSL certificate authority used by this site\n"
+"is known as CACert.org.  In order to proceed you need to install\n"
+"CACert root certificate as a trusted Certificate Authority in your\n"
+"browser."
+msgstr ""
+"Этот сайт использует технологию SSL для защищенной передачи данных между "
+"вами и сервером.  Центр Сертификации, используемый этим сайтом известен как "
+"CACert.org.  Чтобы продолжить работу с сайтом вам необходимо установить "
+"корневой сертификат CACert в качестве доверенного Центра Сертификации в "
+"вашем браузере."
+
+#: app/controllers/invitations_controller.rb:24
+msgid "This user is already invited."
+msgstr "Этот пользователь уже приглашен."
+
+#: app/views/settings/_interface.html.erb:12
+msgid "Time Zone"
+msgstr "Часовой пояс"
+
+#: app/views/items/_grid.html.erb:22 app/views/items/edit.html.erb:7
+#: app/views/categories/_grid.html.erb:20 app/views/categories/edit.html.erb:7
+msgid "Title"
+msgstr "Название"
+
+#: app/views/items/_details_table.html.erb:10
+#: app/views/categories/_details_table.html.erb:15
+msgid "Title:"
+msgstr "Название:"
+
+#: app/views/mail_notifier/invitation_notification.text.html.erb:15
+msgid "To accept the invitation, please follow this link:"
+msgstr "Чтобы принять приглашение, пожалуйста, пройдите по этой ссылке:"
+
+#: app/views/about/ssl/more.html.erb:12
+msgid ""
+"To ensure that you are sending/receiving your data from the\n"
+"claimed website, the concept of a server certificate is used.  Server\n"
+"certificates are issued by %s and are verified by the website clients.\n"
+"In order to let your browser verify that the website's certificate\n"
+"is valid you need to install the so called Root Certificate of a\n"
+"Certificate Authority which have issued the server certificate."
+msgstr ""
+"Для того чтобы пользователь мог удостовериться, что он посылает и получает "
+"данные именно от того сервера, к которому он обращается, используются "
+"серверные сертификаты.  Серверные сертификаты выдаются %s и проверяются на "
+"стороне пользователя.  Чтобы позволить браузеру проверять подлинность "
+"сайтов, следует установить так называемый Корневой Сертификат того Центра "
+"Сертификации, что выдал данный серверный сертификат."
+
+#: app/views/mail_notifier/password_reset_request.text.html.erb:7
+msgid ""
+"To reset the password, please follow this link and enter new\n"
+"password (if the link doesn't open, copy and paste it to your browser's "
+"address bar):"
+msgstr ""
+"Чтобы сбросить пароль, пройдите по следующей ссылке (если ссылка не "
+"открывается по щелчку, скопируйте и вставьте ее в адресную строку Вашего "
+"браузера):"
+
+#: app/helpers/date_time_helper.rb:9
+msgid "Today"
+msgstr "Сегодня"
+
+#: app/views/categories/index.html.erb:1
+msgid "Top-Level Categories"
+msgstr "Категории верхнего уровня"
+
+#: app/views/expenses/index.html.erb:68
+msgid "Total on Page:"
+msgstr "Всего на странице:"
+
+#: app/views/stats/expenses/_quick.html.erb:23
+msgid "Total:"
+msgstr "Итого:"
+
+#: app/views/stats/expenses/_quick.html.erb:3
+#: app/views/shared/_totals.html.erb:2
+msgid "Totals"
+msgstr "Итоги"
+
+#: app/views/expenses/_expenses_guide.html.erb:9
+msgid ""
+"Type &ldquo;?&rdquo; (question mark) alone to see all\n"
+"      possible suggestions."
+msgstr ""
+"Наберите только &laquo;?&raquo; (вопросительный знак), чтобы увидеть все "
+"возможные варианты."
+
+#: app/views/categories/index.html.erb:8
+msgid "Uncategorized Items"
+msgstr "Статьи расходов без категории"
+
+#: app/helpers/user_agent_helper.rb:50
+msgid "Unix-like"
+msgstr "Unix"
+
+#: app/views/items/edit.html.erb:15 app/views/expenses/edit.html.erb:19
+#: app/views/categories/edit.html.erb:15
+msgid "Update"
+msgstr "Изменить"
+
+#: app/views/settings/other_users/index.html.erb:2
+msgid "Users on Your Account"
+msgstr "Пользователи данной учетной записи"
+
+#: locale/model_attributes.rb:10
+msgid "User|Email"
+msgstr "Адрес email"
+
+#: locale/model_attributes.rb:13
+msgid "User|Locale"
+msgstr "Язык"
+
+#: locale/model_attributes.rb:12
+msgid "User|Records per page"
+msgstr "Число записей на странице"
+
+#: locale/model_attributes.rb:11
+msgid "User|Timezone"
+msgstr "Часовой пояс"
+
+#: app/views/about/ssl/index.html.erb:43
+msgid "Visit CACert.org site to obtain CACert root certificate"
+msgstr "Зайти на сайт CACert.org, чтобы загрузить корневой сертификат CACert"
+
+#: app/views/settings/other_users/remove.html.erb:9
+#: app/views/settings/other_users/new.html.erb:10
+msgid "Warning!"
+msgstr "Предупреждение!"
+
+#: app/views/home/index.html.erb:10
+msgid ""
+"We're in closed testing stage now.  Please check back later or\n"
+"drop me a line if you would like to try the site when it becomes ready."
+msgstr ""
+"Сайт находится в стадии закрытого тестирования.  Пожалуйста, зайдите снова "
+"через некоторое время или напишите мне, если вы хотите попробовать сайт, "
+"когда он будет готов к полноценной работе."
+
+#: app/views/mail_notifier/created_new_user_notification.text.html.erb:3
+msgid "Welcome to %s!"
+msgstr "Добро пожаловать в %s!"
+
+#: app/views/home/index.html.erb:3
+msgid "Welcome to YaPET: a Personal Expense Tracker!"
+msgstr "Добро пожаловать в систему управления расходами YaPET!"
+
+#: app/views/about/index.html.erb:13
+msgid "What's in the name?"
+msgstr "Что в имени?"
+
+#: app/views/about/ssl/_ssl_instructions.html.erb:5
+msgid "When you reach %s site, you should see a page like this:"
+msgstr "Зайдя на сайт %s, вы увидите следующую страницу:"
+
+#: app/views/about/ssl/index.html.erb:62
+msgid "Why am I keep getting this page?"
+msgstr "Почему я снова получаю это предупрежение?"
+
+#: app/views/mail_notifier/invitation_notification.text.html.erb:4
+#: app/views/mail_notifier/added_user_notification.text.html.erb:4
+#: app/views/mail_notifier/created_new_user_notification.text.html.erb:3
+#: app/views/shared/_logo.html.erb:2
+msgid "YaPET"
+msgstr "YaPET"
+
+#: app/views/about/index.html.erb:3
+msgid ""
+"YaPET (pronounced with &ldquo;Ya&rdquo; as in &ldquo;yacht&rdquo;\n"
+"and &ldquo;PET&rdquo; as in &ldquo;puppet&rdquo;) is a Personal Expense\n"
+"Tracker web application.  It lets you enter your expenses and keeps\n"
+"track of them for you, providing useful means to review, categorize\n"
+"and gather statistics and estimates for your spending history."
+msgstr ""
+"YaPET (читается &laquo;Япет&raquo;, с ударением на первый слог)&nbsp;&mdash; "
+"это онлайн система управления расходами.  С ее помощью вы можете вести учет "
+"расходов, вводить категории, изучать статистику и прогнозы, основанные на "
+"истории ваших расходов."
+
+#: app/models/mail_notifier.rb:22
+msgid "YaPET: a Personal Expense Tracker -- invitation"
+msgstr "Приглашение в систему управления расходами YaPET"
+
+#: app/views/layouts/mail_notification.html.erb:14
+msgid ""
+"YaPET: a Personal Expense Tracker, is a web application which will help\n"
+"you keep track of your expenses, understand them and reduce your\n"
+"monthly costs."
+msgstr ""
+"Система управления расходами YaPET&nbsp;&mdash; это онлайн-приложение, "
+"которое позволит вам следить за расходами и поможет сократить ваши "
+"ежемесячные затраты."
+
+#: app/views/stats/expenses/index.html.erb:10
+msgid "Year"
+msgstr "Год"
+
+#: app/helpers/date_time_helper.rb:11
+msgid "Yesterday"
+msgstr "Вчера"
+
+#: app/views/mail_notifier/password_reset_request.text.html.erb:3
+msgid ""
+"You (or possibly someone else) have requested that YaPET\n"
+"account's password for the following email address be reset: %s"
+msgstr ""
+"Вы (или, возможно, кто-то еще) запросили сброс пароля в системе YaPET для "
+"данного адреса email: %s"
+
+#: app/views/mail_notifier/created_new_user_notification.text.html.erb:6
+msgid ""
+"You can %s with your email address (%s) and the following\n"
+"password to start tracking your expenses now:"
+msgstr ""
+"Вы можете %s, указав Ваш адрес email (%s) и введя следующий пароль, чтобы "
+"начать управлять Вашими расходами:"
+
+#: app/views/mail_notifier/added_user_notification.text.html.erb:7
+msgid ""
+"You can %s with your email address (%s) and the following\n"
+"password to start tracking your expenses together:"
+msgstr ""
+"Вы можете %s, указав Ваш адрес email (%s) и введя следующий пароль, чтобы "
+"начать управлять расходами вместе:"
+
+#: app/views/expenses/_first_expense_guide.html.erb:2
+msgid "You do not have any expense records yet"
+msgstr "У вас пока нет записей о расходах"
+
+#: app/views/invitations/new.html.erb:25
+msgid "You may add a comment to your friend (optional):"
+msgstr "Добавьте пару слов от себя (если хотите):"
+
+#: app/views/items/_grid.html.erb:83
+msgid ""
+"You may add some items here beforehand, but it's easier to\n"
+"      just use the&nbsp;%s page.  New items are added automatically\n"
+"      when you record new expenses."
+msgstr ""
+"Вы можете добавить статьи расходов заранее, но проще просто воспользоваться "
+"страницей&nbsp;%s.  Новые статьи расходов будут добавляться автоматически "
+"при первом использовании."
+
+#: app/views/expenses/_first_expense_guide.html.erb:22
+msgid ""
+"You may enter anything in the item title field.  Newly\n"
+"          entered items are created automatically and already existing\n"
+"          ones are used for suggestions."
+msgstr ""
+"В поле &laquo;Что&raquo; вы можете вводить что угодно.  Новые статьи "
+"расходов создаются автоматически, а ранее введенные используются для "
+"подсказок при вводе."
+
+#: app/views/about/ssl/index.html.erb:18
+msgid ""
+"You may proceed without installing CACert root certificate.\n"
+"However, your browser will warn you about possible security problem\n"
+"every time you visit this site.  This warning may be disabled with\n"
+"certain browsers (like Firefox), but not with others (like Google\n"
+"Chrome).  Anyway, disabling the security warning by adding a permanent\n"
+"security exception is not recommended."
+msgstr ""
+"Вы можете продолжить работу, не устанавливая корневой сертификат CACert.  "
+"Однако, ваш браузер будет предупреждать вас о возможной проблеме "
+"безопасности при каждом посещении этого сайта.  Это предупреждение может "
+"быть отключено в некоторых браузерах (например, в Firefox), но не во всех "
+"(например, не в Google Chrome).  В любом случае, отключение этого "
+"предупреждения путем добавления постоянного исключения безопасности не "
+"рекомендуется."
+
+#: app/views/expenses/index.html.erb:92
+msgid "You search didn't give any results"
+msgstr "Поиск не дал результатов"
+
+#: app/views/settings/other_users/remove.html.erb:5
+msgid ""
+"You're about to remove the following user from your\n"
+"account:"
+msgstr "Вы запросили удаление следующего пользователя:"
+
+#: app/models/mail_notifier.rb:12
+msgid "Your brand new 'YaPET: a Personal Expense Tracker' account"
+msgstr "Ваша учетная запись в системе управления расходами YaPET"
+
+#: app/views/categories/_grid.html.erb:50
+msgid "Your list of categories is empty"
+msgstr "У вас пока нет категорий"
+
+#: app/views/items/_grid.html.erb:81
+msgid "Your list of items is empty"
+msgstr "У вас пока нет статей расходов"
+
+#: locale/model_attributes.rb:4
+msgid "account"
+msgstr "учетная запись"
+
+#: locale/model_attributes.rb:14
+msgid "category"
+msgstr "категория"
+
+#: app/views/about/ssl/why.html.erb:16
+msgid ""
+"click %s to proceed.  If you get the security problem\n"
+"        warning from your browser, follow %s again."
+msgstr ""
+"щелкните %s, чтобы продолжить.  Если вы снова получаете предупреждение "
+"безопасности от вашего браузера, следуйте %s."
+
+#: app/views/expenses/index.html.erb:54
+msgid "comment"
+msgstr "коммент."
+
+#: app/views/about/ssl/why.html.erb:5
+msgid "cookies"
+msgstr "куки"
+
+#: app/views/stats/expenses/_quick.html.erb:17
+#: app/views/shared/_totals_rowset.html.erb:20
+msgid "earlier..."
+msgstr "раньше..."
+
+#: app/helpers/in_place_i18n_helper.rb:3
+msgid "edit"
+msgstr "изменить"
+
+#: app/views/about/ssl/why.html.erb:12
+msgid "enable HTTP cookies for this site."
+msgstr "включите куки для этого сайта."
+
+#: locale/model_attributes.rb:6
+msgid "expense"
+msgstr "расход"
+
+#: app/views/about/ssl/why.html.erb:22
+msgid ""
+"follow %s for your new browser, while making sure\n"
+"        cookies are enabled for this site."
+msgstr ""
+"следуйте %s для вашего нового браузера, убедившись что куки включены для "
+"данного сайта."
+
+#: app/views/about/index.html.erb:16
+msgid "hacker"
+msgstr "хакерской"
+
+#: app/views/about/ssl/why.html.erb:18
+msgid "here"
+msgstr "сюда"
+
+#: app/views/home/dashboard.html.erb:7
+msgid "home|Categories"
+msgstr "Категорий"
+
+#: app/views/home/dashboard.html.erb:3
+msgid "home|Expenses"
+msgstr "Расходов"
+
+#: app/views/home/dashboard.html.erb:5
+msgid "home|Items"
+msgstr "Статей расходов"
+
+#: app/views/home/dashboard.html.erb:9
+msgid "home|Statistics"
+msgstr "Статистику"
+
+#: app/views/about/ssl/more.html.erb:19
+msgid "http://en.wikipedia.org/wiki/Certificate_authority"
+msgstr ""
+"http://ru.wikipedia.org/wiki/%D0%A6%D0%B5%D0%BD%D1%82%D1%80_%D1%81%D0%B5%D1%"
+"80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8"
+
+#: app/views/about/ssl/why.html.erb:6
+msgid "http://en.wikipedia.org/wiki/HTTP_cookie"
+msgstr "http://ru.wikipedia.org/wiki/HTTP_cookie"
+
+#: app/views/about/index.html.erb:17
+msgid "http://en.wikipedia.org/wiki/Hacker_(programmer_subculture)"
+msgstr "http://ru.wikipedia.org/wiki/%D0%A5%D0%B0%D0%BA%D0%B5%D1%80"
+
+#: app/views/about/index.html.erb:19
+msgid "http://en.wikipedia.org/wiki/Recursive_acronym"
+msgstr ""
+"http://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%BA%D1%83%D1%80%D1%81%D0%B8%D0%"
+"B2%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BA%D1%80%D0%BE%D0%BD%D0%B8%D0%BC"
+
+#: app/views/about/ssl/more.html.erb:7
+msgid "http://en.wikipedia.org/wiki/Transport_Layer_Security"
+msgstr "http://ru.wikipedia.org/wiki/SSL"
+
+#: app/views/about/ssl/more.html.erb:23
+msgid "http://www.cacert.org/"
+msgstr "http://www.cacert.org/"
+
+#: app/views/shared/_search_terms.html.erb:12
+msgid "in %s"
+msgstr "за %s"
+
+#: app/views/about/ssl/more.html.erb:24 app/views/about/ssl/why.html.erb:7
+msgid "instructions"
+msgstr "инструкции"
+
+#: locale/model_attributes.rb:2
+msgid "item"
+msgstr "статья расходов"
+
+#: app/views/about/ssl/_ssl_instructions.html.erb:63
+#: app/views/mail_notifier/added_user_notification.text.html.erb:9
+#: app/views/mail_notifier/created_new_user_notification.text.html.erb:8
+msgid "login"
+msgstr "войти"
+
+#: app/views/about/ssl/why.html.erb:25
+msgid ""
+"none of the above?  Then there might be a problem with the\n"
+"        site itself."
+msgstr ""
+"ни одна из вышеперечисленных?  В таком случае, проблема может иметь место на "
+"самом сайте."
+
+#: app/views/invitations/new.html.erb:36
+msgid "or"
+msgstr "или"
+
+#: app/views/about/index.html.erb:18
+msgid "recursive acronym"
+msgstr "рекурсивным сокращением"
+
+#: app/views/shared/_header.html.erb:6
+msgid "sandbox"
+msgstr "песочница"
+
+#: app/views/about/ssl/why.html.erb:28
+msgid "tell us"
+msgstr "сообщите нам"
+
+#: app/views/expenses/index.html.erb:58
+msgid "th|Amount"
+msgstr "Сколько"
+
+#: app/views/expenses/index.html.erb:18
+msgid "th|Date"
+msgstr "Когда"
+
+#: app/views/settings/other_users/new.html.erb:36
+msgid "th|Email"
+msgstr "Адрес email"
+
+#: app/views/expenses/index.html.erb:47
+msgid "th|Item"
+msgstr "Что"
+
+#: app/views/items/_grid.html.erb:50
+#: app/views/stats/expenses/index.html.erb:12
+#: app/views/stats/categories/_stats_table.html.erb:21
+#: app/views/categories/_grid.html.erb:37
+msgid "th|Total Spent"
+msgstr "Всего"
+
+#: app/views/items/_details_table.html.erb:32
+#: app/views/items/_grid.html.erb:47
+#: app/views/categories/_details_table.html.erb:37
+#: app/views/categories/_grid.html.erb:34
+msgid "uncategorized"
+msgstr "без категории"
+
+#: locale/model_attributes.rb:9
+msgid "user"
+msgstr "пользователь"
+
+#: app/views/about/ssl/why.html.erb:10
+msgid ""
+"you have disabled %s in your browser so the site have no way\n"
+"        to check that you've read and accepted the SSL warning."
+msgstr ""
+"вы отключили %s в вашем браузере, и поэтому данный сайт не может убедиться в "
+"том, что вы прочли и приняли предупреждение SSL."
+
+#: app/views/about/ssl/why.html.erb:14
+msgid "you've deleted or lost your browsing history, including %s."
+msgstr "вы удалили или утеряли вашу историю посещения сайтов, включая %s."
+
+#: app/views/about/ssl/why.html.erb:20
+msgid ""
+"you've visited the site from the same computer, but using\n"
+"        another browser."
+msgstr ""
+"вы зашли на данный сайт с того же компьютера, что и раньше, но используя "
+"другой браузер."

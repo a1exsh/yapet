@@ -1,0 +1,35 @@
+<div id="main">
+  <div id="page">
+
+    <div id="header">
+      <%= render :partial => "shared/header" %>
+    </div><!--header-->
+
+    <div id="body">
+      <div id="sidebar">
+        <%= render :partial => "shared/sidebar" %>
+      </div><!--sidebar-->
+
+      <div id="adbar">
+        <!--Advertisement-->
+      </div><!--adbar-->
+
+      <div id="content">
+        <% unless flash[:error].blank? %>
+          <p id="flash_error"><%= flash[:error] %></p>
+        <% end %>
+        <% unless flash[:notice].blank? %>
+          <p id="flash_notice"><%= flash[:notice] %></p>
+        <% end %>
+
+        <%= yield %>
+      </div><!--content-->
+
+    </div><!--body-->
+
+    <div id="footer">
+      <%= render :partial => "shared/footer" %>
+    </div><!--footer-->
+
+  </div><!--page-->
+</div><!--main-->

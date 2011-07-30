@@ -1,0 +1,13 @@
+<h1><%=_("Hello there!")%></h1>
+<p>
+<%= _("Hey, %s invites you to share his %s account!") %
+      [h(@owner_email), link_to(_("YaPET"), root_url)] %>
+</p>
+<p>
+<%=_("You can %s with your email address (%s) and the following
+password to start tracking your expenses together:") %
+     [link_to(_("login"), new_session_url), h(@email)] %>
+<span style="font-family:Monospace; font-size:110%; background:#bbb;">
+  <%=h @password %>
+</span>
+</p>

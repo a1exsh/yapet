@@ -1,0 +1,49 @@
+<% if @invite.nil? %>
+  <%= render :partial => "not_found" %>
+<% else %>
+
+<h2><%= _("Hello, %s!") % @invite.email %></h2>
+<% form_tag accept_invitation_path(@invite.code), :method => :post do %>
+<p>
+<%= _("Before completing your registration you may change your email
+address and pick a password (recommended):") %>
+</p>
+<table class="settings-table">
+  <tbody>
+  <tr>
+    <td><%= label_tag :email, _("Email") %></td>
+    <td><%= text_field_tag :email, @email %></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><%= label_tag "password", _("Password") %></td>
+    <td><%= password_field_tag "password", nil,
+              :onkeyup => "checkPasswordConfirmation('password');" %></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><%= label_tag "confirm_password", _("Confirm Password") %></td>
+    <td><%= password_field_tag "confirm_password", nil,
+              :onkeyup => "checkPasswordConfirmation('password');" %></td>
+    <td><div id="password-match-status" class="icon"></div></td>
+  </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="3">
+        <%= submit_tag _("Accept") %>
+      </td>
+    </tr>
+  </tfoot>
+</table>
+<p>
+<%= _("If you don't enter a password, a random one will be generated
+and sent to the specified email address.") %>
+</p>
+<p>
+<%= _("These settings can also be changed later at any time once
+you've successfully logged in.") %>
+</p>
+<% end %>
+
+<% end %>

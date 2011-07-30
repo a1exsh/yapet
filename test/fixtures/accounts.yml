@@ -1,0 +1,7 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  paid_till: 2010-03-05
+
+two:
+  paid_till: 2010-03-05

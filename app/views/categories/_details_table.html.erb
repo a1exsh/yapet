@@ -1,0 +1,49 @@
+<% reload_js = remote_function :update => "category_details_wrapper",
+   :url => { :controller => "categories", :action => "details_table",
+     :id => @category.id },
+   :method => :get %>
+
+<div id="category_details_wrapper">
+<h2><%=_("Category:")%> <%= category_breadcrumbs @category %></h2>
+
+<fieldset id="category_general">
+<legend><%=_("General")%></legend>
+
+<table class="category-details">
+  <tr>
+    <td><div id="category_title_status" class="icon"/></td>
+    <td><%=_("Title:")%></td>
+    <td class="icon"></td>
+    <td>
+      <%= in_place_completing_editor_field :category, :title, {},
+          { :status_icon_id => "category_title_status",
+            :reload_js => reload_js } %>
+    </td>
+  </tr>
+  <tr>
+    <td><div id="category_parent_status" class="icon"/></td>
+    <td><%=_("Subcategory of:")%></td>
+    <td class="icon">
+      <% if @category.parent %>
+        <%= link_to '', category_path(@category.parent),
+            :title => _("Click to view this Category"),
+            :class => "icon icon-category" %>
+      <% end %>
+    </td>
+    <td>
+      <%= in_place_completing_editor_field :category, :parent_title, {},
+          { :status_icon_id => "category_parent_status",
+            :reload_js => reload_js,
+            :blank_text => _("uncategorized") } %>
+    </td>
+  </tr>
+</table>
+
+<p>
+  <%= link_to _("Remove"), category_path(@category), :method => :delete,
+      :confirm => _("Are you sure you want to remove this category?"),
+      :class => "bgicon kill" %>
+</p>
+</fieldset>
+
+</div>

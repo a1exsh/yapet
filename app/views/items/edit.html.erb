@@ -1,0 +1,19 @@
+<h2><%=_("Editing item")%></h2>
+
+<% form_for(@item) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title, _("Title") %><br />
+    <%= text_field_with_auto_complete(:item, :title) %>
+  </p>
+  <p>
+    <%= f.label :category_title, _("Category") %><br />
+    <%= text_field_with_auto_complete(:item, :category_title) %>
+  </p>
+  <p>
+    <%= f.submit _("Update") %>
+  </p>
+<% end %>
+
+<%= link_to _("Back"), :back, :class => "bgicon back" %>

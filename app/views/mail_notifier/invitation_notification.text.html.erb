@@ -1,0 +1,21 @@
+<h1><%=_("Hello there!")%></h1>
+<p>
+  <%= _("Hey, %s invites you to try %s!") %
+        [h(@invite.inviting_user_email), link_to(_("YaPET"), root_url)] %>
+</p>
+<% unless @comment.blank? %>
+  <p>
+    <%= _("Here's the comment from this user:") %>
+    <blockquote style="font-style: italic; background: #eee; border: 1px solid #bbb; padding: 0 0.5em">
+      <%= textilize @comment %>
+    </blockquote>
+  </p>
+<% end %>
+<p>
+  <%= _("To accept the invitation, please follow this link:") %>
+  <%= link_to @invitation_url, @invitation_url %>
+</p>
+<p>
+  <%= _("If you don't want to accept this invitation there's no need to do
+anything specific&mdash;it will expire automatically within a week.") %>
+</p>

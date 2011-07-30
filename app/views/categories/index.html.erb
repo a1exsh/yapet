@@ -1,0 +1,12 @@
+<h2><%=_("Top-Level Categories")%></h2>
+
+<%= render :partial => 'grid' %>
+
+<p><br/></p>
+
+<% unless @items.empty? %>
+<h2><%=_("Uncategorized Items")%></h2>
+
+<% @uncategorized_only = true %>
+<%= render :partial => 'items/grid' %>
+<% end %>

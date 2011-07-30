@@ -1,0 +1,14 @@
+<p>
+<%=_("In Chrome, on Unix-like systems there's currently no GUI for
+importing security certificates.  You can go to &ldquo;Options ->
+Under the Hood&rdquo; and click the &ldquo;Manage Certificates&rdquo;
+link, like shown here:")%>
+<%= ssl_instructions_image 'cacert-manage-certs-chrome-x11' %>
+</p>
+<p>
+<%=_("The link will bring you to this page: %s, where you can read
+about using the command line to install the certificate on your
+system.") %
+     external_link_to("code.google.com/p/chromium/wiki/LinuxCertManagement",
+                      "http://code.google.com/p/chromium/wiki/LinuxCertManagement") %>
+</p>

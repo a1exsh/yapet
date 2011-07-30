@@ -1,0 +1,40 @@
+<% age = current_account.age %>
+<% if age > 1.day %>
+<% stars = 0 %>
+
+<fieldset>
+<legend><%=_("Averages")%></legend>
+
+<table class="averages">
+  <tbody>
+    <tr>
+      <td><%=_("Daily")%></td>
+      <td class="cy"><%=cy @averages[:daily] %></td>
+    </tr>
+    <% if age > 1.week %>
+    <tr>
+      <td><%=_("Monthly")%></td>
+      <td class="cy">
+        <%=cy @averages[:monthly] %><%= (stars += 1; '*') if age < 1.month %>
+      </td>
+    </tr>
+    <% end %>
+    <% if age > 1.month %>
+    <tr>
+      <td><%=_("Annually")%></td>
+      <td class="cy">
+        <%=cy @averages[:annually] %><%= (stars += 1; '*') if age < 1.year %>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+  <% if stars != 0 %>
+  <tfoot>
+   <tr>
+      <td colspan="2"><%=_("* - estimated")%></td>
+    </tr>
+  </tfoot>
+  <% end %>
+</table>
+</fieldset>
+<% end %>

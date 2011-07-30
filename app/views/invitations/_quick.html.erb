@@ -1,0 +1,38 @@
+<% if logged_in? && current_user.can_invite? %>
+<div id="invites_block">
+  <script type="text/javascript">
+var inviteEmailURIKey = '?' + encodeURIComponent('invitation[email]') + '=';
+function onClickInvitePreview()
+{
+  var link = $('invite_preview_link');
+  var href = link.href;
+  var i = href.indexOf(inviteEmailURIKey);
+  if (i != -1)
+    href = href.substring(0, i);
+  link.href = href + inviteEmailURIKey + $('invitation_email').value;
+}
+  </script>
+  <% form_remote_tag :url => invitations_path,
+     :update => 'invites_wrapper' do %>
+    <%= label_tag :invitation_email, _("Invite a friend:") %>
+    <%= text_field_tag "invitation[email]",
+          @invite.nil? ? "" : @invite.email,
+          :placeholder => "john@example.com",
+          :disabled => current_user.no_invites_left? %>
+    <div id="invite_status">
+      <span id="invite_success"><%= @invite_success || "" %></span>
+      <span id="invite_failure"><%= @invite_failure || "" %></span>
+    </div>
+    <div id="invites_left">
+      <%= invites_left_text %>
+    </div>
+    <% unless current_user.no_invites_left? %>
+      <%= submit_tag _("Send") %>
+      /
+      <%= link_to _("Preview"), new_invitation_path, :target => "blank",
+          :id => "invite_preview_link",
+          :onclick => "onClickInvitePreview()" %>
+    <% end %>
+  <% end %>
+</div>
+<% end %>

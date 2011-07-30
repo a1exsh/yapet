@@ -1,0 +1,64 @@
+<% unless ssl_accepted? %>
+<h2><%=_("Attention, first time visiter!")%></h2>
+<p class="warning">
+<%=_("It appears that you visit this site for the first time on this computer.")%>
+</p>
+<% else %>
+<h2><%=_("About SSL technology")%></h2>
+<% end %>
+
+<p>
+<%=_("This site uses SSL technology to secure communications between
+you and the server.  The SSL certificate authority used by this site
+is known as CACert.org.  In order to proceed you need to install
+CACert root certificate as a trusted Certificate Authority in your
+browser.")%>
+</p>
+<p>
+<%=_("You may proceed without installing CACert root certificate.
+However, your browser will warn you about possible security problem
+every time you visit this site.  This warning may be disabled with
+certain browsers (like Firefox), but not with others (like Google
+Chrome).  Anyway, disabling the security warning by adding a permanent
+security exception is not recommended.")%>
+</p>
+
+<% unless ssl_accepted? %>
+<p>
+<%= link_to _("I've already installed CACert.org as a trusted
+Certificate Authority (or I'd like to proceed without installing
+it)"), about_accept_ssl_path %>
+</p>
+<% end %>
+
+<p>
+<script type="text/javascript">
+function showSslInstructions()
+{
+  $('ssl_instructions').blindDown({
+    afterFinish: function() { $('show_instructions_link').hide(); }
+  });
+}
+</script>
+<%= external_link_to _("Visit CACert.org site to obtain CACert root certificate"),
+    'http://www.cacert.org/',
+    :onclick => "showSslInstructions()" %>
+<% unless @show_instructions %>
+<br/>
+<%= link_to_function _("Show Instructions"), "showSslInstructions()",
+      :id => "show_instructions_link" %>
+<% end %>
+</p>
+
+<%= render :partial => "ssl_instructions" %>
+
+<p>
+<%= link_to _("Tell me more about SSL certificates and certificate authorities"), about_more_ssl_path %>
+</p>
+
+<% unless ssl_accepted? %>
+<hr/>
+<p>
+<%= link_to _("Why am I keep getting this page?"), about_why_ssl_path %>
+</p>
+<% end %>

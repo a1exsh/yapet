@@ -1,0 +1,29 @@
+<%= render :partial => "shared/logo" %>
+
+<% if logged_in? %>
+
+  <% if current_account.is_sandbox? %>
+    <span class="sandbox"><%=_("sandbox")%></span>
+    <span class="link-separator">|</span>
+    <%= mail_to "alex.shulgin@gmail.com", _("Give me real account!"),
+        :subject => "YaPET Account Request" %>
+  <% else %>
+    <span class="loggedin_email"><%=h current_user.email %></span>
+  <% end %>
+  <span class="link-separator">|</span>
+  <%= link_to _("Settings"), edit_settings_path, :class => "bgicon settings" %>
+  <span class="link-separator">|</span>
+  <%= link_to _("Log out"), logout_url, :method => :delete,
+      :class => "bgicon logout"  %>
+
+<% else %>
+
+  <%= link_to "English (US)", language_path(:id => "en"),
+      :class => "bgicon english" %>
+  <span class="link-separator">|</span>
+  <%= link_to "Русский", language_path(:id => "ru"),
+      :class => "bgicon russian" %>
+  <span class="link-separator">|</span>
+  <%= link_to _("Log in"), new_session_path, :class => "bgicon login" %>
+
+<% end %>

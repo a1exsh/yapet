@@ -1,0 +1,59 @@
+<h2><%=_("Settings")%></h2>
+<h3><%=_("Users on Your Account")%></h3>
+
+<% if current_account.exclusive? %>
+<p>
+<%=_("Currently only you can access this account.")%>
+</p>
+<% else %>
+<p>
+<%=_("Other people who can access this account:")%>
+</p>
+
+<% grid :user, @users, :reload_url => settings_other_users_path,
+   :html => { :class => "grid nospread" },
+   :show_title => false,
+   :show_header => false,
+   :show_footer => false,
+   :show_status => false,
+   :show_edit => false,
+   :show_destroy => current_user.account_owner?,
+   :show_new_record_link => false do |g| %>
+
+  <% g.column do %>
+    <div class="icon icon-ok"></div>
+  <% end %>
+
+  <% g.column do %>
+    <%=h @user.email %>
+  <% end %>
+
+  <% if current_user.account_owner? %>
+    <% g.destroy_link do |*args| %>
+      <%# well, this is ugly %>
+      <% args[1] = remove_settings_other_user_path(@user) %>
+      <%= link_to *args %>
+    <% end %>
+  <% end %>
+<% end %>
+
+<p>
+<%=_("These people can list, edit, create new or remove existing expenses,
+items, etc. on this account.")%>
+</p>
+<% end %>
+
+<% unless current_user.account_owner? %>
+<p class="warning">
+<%=_("Only account owner can add or remove users on this account.")%>
+</p>
+<% end %>
+
+<p>
+<% if current_user.account_owner? %>
+<%= link_to _("Add more people"), new_settings_other_user_path,
+      :class => "bgicon add" %> |
+<% end %>
+<%= link_to _("Go back to settings"), edit_settings_path,
+      :class => "bgicon back" %>
+</p>

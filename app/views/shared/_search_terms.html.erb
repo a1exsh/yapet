@@ -1,0 +1,20 @@
+<h3>
+<% first = true %>
+
+<% if @search_item %>
+<%= _("For &ldquo;%s&rdquo;") % link_to(@search_item.title, @search_item) %>
+<% first = false %>
+<% elsif @search_category %>
+<%= _("In category &ldquo;%s&rdquo;") % link_to(@search_category.title, @search_category) %>
+<% first = false %>
+<% end %>
+
+<% date_format = first ? _("In %s") : _("in %s") %>
+<% if @search_date %>
+<%= date_format % l(@search_date) %>
+<% elsif @search_month %>
+<%= date_format % l(@search_month, :format => "%B") %>
+<% elsif @search_year %>
+<%= date_format % l(@search_year, :format => "%Y") %>
+<% end %>
+</h3>

@@ -1,0 +1,65 @@
+<div id="ssl_instructions"
+     style="<%= "display:none;" unless @show_instructions %>">
+<a name="instructions"></a>
+<p>
+<%= _("When you reach %s site, you should see a page like this:") %
+      external_link_to('CACert.org', "http://www.cacert.org/") %>
+<%= ssl_instructions_image 'cacert-index-page' %>
+</p>
+<p>
+<%=_("Click on the &ldquo;Root Certificate&rdquo; link to the right to
+go to the root certificate download page:")%>
+<%= ssl_instructions_image 'cacert-download-page' %>
+</p>
+<p>
+<%=_("Click on the &ldquo;Root Certificate (PEM Format)&rdquo; link to
+download the encoded root certificate.")%>
+</p>
+
+<p>
+<%=_("Instructions for:")%>
+</p>
+
+<% choices = user_agent_choices %>
+
+<script type="text/javascript">
+function show_ssl_block(id)
+{
+<% for ua in choices %>
+  if (id == '<%= ua[:id] %>') {
+    $('<%= "#{ua[:id]}_block" %>').show();
+    $('<%= "#{ua[:id]}_link" %>').addClassName('selected');
+  } else {
+    $('<%= "#{ua[:id]}_block" %>').hide();
+    $('<%= "#{ua[:id]}_link" %>').removeClassName('selected');
+  }
+<% end %>
+}
+</script>
+
+<ul id="user_agent_choices">
+  <% for ua in choices %>
+  <li>
+    <a id="<%= ua[:id] %>_link"
+       class="<%= ua[:class] %> <%= "selected" if ua[:detected] %>"
+       href="#" onclick="show_ssl_block('<%= ua[:id] %>'); return false;">
+      <span class="browser"><%= ua[:browser] %></span><br/>
+      <span class="user-os"><%= ua[:os] %></span>
+    </a>
+  </li>
+  <% end %>
+</ul>
+
+<% for ua in choices %>
+<div id="<%= ua[:id] %>_block"
+     style="<%= "display:none;" unless ua[:detected] %>">
+  <%= render :partial => "ssl_#{ua[:id]}" %>
+</div>
+<% end %>
+
+<hr/>
+<p>
+<%=_("Now you should be able to verify this site connection and login
+securely:")%> <%= link_to _("login"), about_accept_ssl_path %>
+</p>
+</div>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="363.32919"
+   height="347.87582"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47pre4 r22446"
+   sodipodi:docname="cart.svg">
+  <title
+     id="title3885">shopping cart</title>
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective2941"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3731"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.5781493"
+     inkscape:cx="181.6646"
+     inkscape:cy="173.93791"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1280"
+     inkscape:window-height="726"
+     inkscape:window-x="0"
+     inkscape:window-y="26"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       orientation="1,0"
+       position="1952.3593,-257.99058"
+       id="guide3856" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="2191.3293,-256.72619"
+       id="guide3858" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="2191.3293,-217.53005"
+       id="guide3860" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>shopping cart</dc:title>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>cart</rdf:li>
+            <rdf:li>supermarket</rdf:li>
+            <rdf:li>shopping</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:description>shopping cart</dc:description>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Sergio Luiz Araujo Silva</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-226.18746,-41.890443)">
+    <path
+       style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#000000;fill-opacity:1;stroke:none;stroke-width:15.5;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:'.PhonepadTwo';-inkscape-font-specification:'.PhonepadTwo'"
+       d="m 579.07459,41.891372 c -0.5602,0.008 -1.1368,0.0575 -1.6876,0.15625 -0.01,0.002 -0.021,-0.002 -0.031,0 l -55.625,9.5 c -3.5377,0.60697 -6.5035,3.03284 -7.8125,6.375 a 2.5290362,2.5290362 0 0 0 0,0.0312 l -25.8125,66.187498 -251.9062,6.28125 c -2.897,0.0724 -5.6164,1.38086 -7.5,3.5625 -1.8833,2.18167 -2.7899,5.08291 -2.4376,7.96875 l 13.9063,115.03125 c 0.5737,4.82612 4.561,8.6532 9.4063,9.03125 l 179.5937,14.28125 35.5937,28 a 2.5290362,2.5290362 0 0 0 0.125,0.0937 c 0.038,0.0264 0.086,0.0365 0.125,0.0625 0.044,0.0291 0.081,0.0652 0.125,0.0937 6.4957,4.84854 8.1056,11.45407 7.1876,15.125 -0.5231,2.09179 -1.3217,3.62865 -3.2188,4.8125 -1.8971,1.18385 -5.1742,2.04059 -10.7812,1.71875 a 2.5290362,2.5290362 0 0 0 -0.063,0 c -0.1801,-0.006 -0.3823,-0.004 -0.5624,0 -0.03,6.9e-4 -0.064,-9.6e-4 -0.094,0 l -214.1875,0.625 -0.031,0 c -5.6288,-0.0359 -10.3661,4.68517 -10.3437,10.3125 0.022,5.62785 4.7779,10.33092 10.4063,10.25 0.011,-1.5e-4 0.021,1.9e-4 0.031,0 l 15.6562,-0.0312 c -5.8172,3.70826 -9.7187,10.19515 -9.7187,17.5625 0,11.45874 9.3852,20.84375 20.8437,20.84375 11.4588,0 20.8438,-9.38501 20.8438,-20.84375 0,-7.4072 -3.9118,-13.95842 -9.7812,-17.65625 l 176.375,-0.5 c -6.3545,3.58252 -10.6876,10.38369 -10.6876,18.15625 0,11.45874 9.385,20.84375 20.8438,20.84375 11.4587,0 20.8438,-9.38501 20.8438,-20.84375 0,-9.95151 -7.0696,-18.34068 -16.4376,-20.375 8.8575,-3.13336 15.6618,-9.59464 19.875,-19.46875 a 2.5290362,2.5290362 0 0 0 0.1563,-0.375 c 3.23,-12.91629 -2.4989,-26.95912 -14.3125,-36.09375 a 2.5290362,2.5290362 0 0 0 -0.094,-0.0937 c -0.029,-0.0222 -0.034,-0.0716 -0.062,-0.0937 a 2.5290362,2.5290362 0 0 0 -0.3438,-0.34375 l -25.2188,-19.78125 78.6563,-201.468748 49.9063,-8.5 c 0.01,-0.002 0.021,0.002 0.031,0 5.2427,-0.84286 9.0768,-5.72917 8.625,-11.03125 -0.4525,-5.31218 -5.0811,-9.47862 -10.4062,-9.40625 z m -98.5626,98.124998 -14.5,37.1875 -18.9062,0 0,-36.34375 33.4062,-0.84375 z m -40.625,1.03125 0,36.15625 -34.9062,0 0,-35.28125 34.9062,-0.875 z m -42.125,1.03125 0,35.125 -34.9062,0 0,-34.25 34.9062,-0.875 z m -42.125,1.0625 0,34.0625 -34.9062,0 0,-33.1875 34.9062,-0.875 z m -42.125,1.0625 0,33 -34.9062,0 0,-32.125 34.9062,-0.875 z m -42.125,1.03125 0,31.96875 -25.5937,0 -3.7813,-31.21875 29.375,-0.75 z m -24.7187,39.15625 24.7187,0 0,32.65625 -20.7812,0 -3.9375,-32.65625 z m 31.9375,0 34.9062,0 0,32.65625 -34.9062,0 0,-32.65625 z m 42.125,0 34.9062,0 0,32.65625 -34.9062,0 0,-32.65625 z m 42.125,0 34.9062,0 0,32.65625 -34.9062,0 0,-32.65625 z m 42.125,0 34.9062,0 0,32.65625 -34.9062,0 0,-32.65625 z m 42.125,0 16.125,0 -12.75,32.65625 -3.375,0 0,-32.65625 z m -195.625,39.84375 19.9062,0 0,23.4375 -17.25,-1.375 -2.6562,-22.0625 z m 27.125,0 34.9062,0 0,26.78125 -34.9062,-2.78125 0,-24 z m 42.125,0 34.9062,0 0,30.125 -34.9062,-2.75 0,-27.375 z m 42.125,0 34.9062,0 0,33.5 -34.9062,-2.78125 0,-30.71875 z m 42.125,0 34.9062,0 0,19.875 -6.625,16.96875 c -0.86,-0.41667 -1.7975,-0.6724 -2.75,-0.75 l -25.5312,-2.03125 0,-34.0625 z m 42.125,0 0.5312,0 -0.5312,1.46875 0,-1.46875 z m -176.8438,132.4375 c 6.8111,0 12.25,5.43904 12.25,12.25 0,6.81096 -5.4389,12.21875 -12.25,12.21875 -6.8107,0 -12.25,-5.40779 -12.25,-12.21875 0,-6.81096 5.4393,-12.25 12.25,-12.25 z m 197.5938,0 c 6.8109,0 12.25,5.43904 12.25,12.25 0,6.81096 -5.4391,12.21875 -12.25,12.21875 -6.811,0 -12.25,-5.40779 -12.25,-12.21875 0,-6.81096 5.439,-12.25 12.25,-12.25 z m -197.5938,5.8125 c -3.7001,0 -6.6562,2.9561 -6.6562,6.65625 0,3.70015 2.9561,6.625 6.6562,6.625 3.7003,0 6.6563,-2.92485 6.6563,-6.625 0,-3.70015 -2.956,-6.65625 -6.6563,-6.65625 z m 197.5938,0 c -3.7002,0 -6.6562,2.9561 -6.6562,6.65625 0,3.70015 2.956,6.625 6.6562,6.625 3.7001,0 6.6562,-2.92485 6.6562,-6.625 0,-3.70015 -2.9561,-6.65625 -6.6562,-6.65625 z"
+       id="path3847" />
+  </g>
+</svg>

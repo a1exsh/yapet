@@ -1,0 +1,42 @@
+<h1><%=_("About YaPET")%></h1>
+<p>
+<%=_("YaPET (pronounced with &ldquo;Ya&rdquo; as in &ldquo;yacht&rdquo;
+and &ldquo;PET&rdquo; as in &ldquo;puppet&rdquo;) is a Personal Expense
+Tracker web application.  It lets you enter your expenses and keeps
+track of them for you, providing useful means to review, categorize
+and gather statistics and estimates for your spending history.")%>
+</p>
+<p>
+<%=_("Anywhere, anytime.")%>
+</p>
+
+<h2><%=_("What's in the name?")%></h2>
+<p>
+<% links = \
+   [[_("hacker"),
+     _("http://en.wikipedia.org/wiki/Hacker_(programmer_subculture)")],
+    [_("recursive acronym"),
+     _("http://en.wikipedia.org/wiki/Recursive_acronym")]] %>
+
+<%=_("Following a good old %s tradition, YaPET is a %s for
+     &ldquo;YaPET: a Personal Expense Tracker&rdquo;.") % \
+     links.map{|lnk| external_link_to(lnk.first, lnk.second) } %>
+</p>
+<p>
+<%=_("Following another common approach the &ldquo;Ya&rdquo; prefix may
+be thought of as &ldquo;Yet another&rdquo;.  I'm not opposed to this
+particular interpretation and nothing stops you from deriving your
+own, if you have some imagination. :)")%>
+</p>
+
+<h2><%=_("Our mascot")%></h2>
+<p>
+<%=_("The project mascot is a kangaroo named Petya (Russian for Pete).
+I love to play with words, and you may have noticed how the
+&ldquo;ya&rdquo; prefix hopped from start in the project name to the end
+in our mascot name.")%>
+</p>
+<p>
+<%= image_tag "kangaroo-left.png",
+    :title => _("Our mascot, kangaroo Petya") %>
+</p>

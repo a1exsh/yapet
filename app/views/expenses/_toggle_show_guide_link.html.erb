@@ -1,0 +1,17 @@
+<% show_text = _("Show Guide") %>
+<% hide_text = _("Hide Guide") %>
+<% toggle_func_js = "function(){ " + \
+     remote_function(:url => { :controller => "settings",
+                       :action => "toggle_show_guide" },
+                     :method => :put) + \
+   " }" %>
+
+<% if current_user.show_guide %>
+  <%= link_to_function hide_text,
+      "hide_guide(#{toggle_func_js}, '#{show_text}', '#{hide_text}')",
+      :id => "toggle_guide" %>
+<% else %>
+  <%= link_to_function show_text,
+      "show_guide(#{toggle_func_js}, '#{show_text}', '#{hide_text}')",
+      :id => "toggle_guide" %>
+<% end %>

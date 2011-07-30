@@ -1,0 +1,7 @@
+<h2><%=_("Settings")%></h2>
+
+<% unless current_account.is_sandbox? %>
+<%= render :partial => "primary" %>
+<% end %>
+
+<%= render :partial => "interface" %>

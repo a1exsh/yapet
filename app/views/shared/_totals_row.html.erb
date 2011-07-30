@@ -1,0 +1,12 @@
+<% date = @totals[:"#{which}_#{period}"] %>
+<% amount = @totals[:"total_#{which}_#{period}"] %>
+
+<tr>
+  <td><%=l date, :format => date_format %></td>
+  <td class="cy"><%=cy amount %></td>
+  <td class="expenses-link">
+    <% unless amount == 0 %>
+      <%= find_expenses_link @find_options.merge(period.to_sym => date.to_date) %>
+    <% end %>
+  </td>
+</tr>

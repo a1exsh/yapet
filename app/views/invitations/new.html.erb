@@ -1,0 +1,41 @@
+<h1><%= _("Invitation Preview") %></h1>
+
+<p id="invite_success">
+  <%= @invite_success || "" %>
+</p>
+<p id="invite_failure">
+  <%= @invite_failure || "" %>
+</p>
+
+<div id="invitation_preview">
+  <%= @preview %>
+</div>
+
+<% form_for(@invite) do |f| %>
+  <p>
+    <%= f.label :email, _("Email:") %>
+    <%= f.text_field :email, :disabled => current_user.no_invites_left? %>
+  </p>
+  <p>
+    <%= f.label :locale, _("Language:") %>
+    <%= f.select :locale, locale_choices,
+          :disabled => current_user.no_invites_left? %>
+  </p>
+  <p>
+    <%= label_tag :comment, _("You may add a comment to your friend (optional):") %>
+  </p>
+  <p>
+    <%= text_area_tag :comment, @comment, :size => "50x5",
+          :disabled => current_user.no_invites_left? %>
+  </p>
+  <p>
+    <%= invites_left_text %>
+  </p>
+  <% unless current_user.no_invites_left? %>
+    <%= f.submit _("Send") %>
+    <%= _("or") %>
+    <%= submit_to_remote 'preview', _("Preview Again"),
+          :url => new_invitation_path, :method => :get,
+          :update => 'invitation_preview' %>
+  <% end %>
+<% end %>

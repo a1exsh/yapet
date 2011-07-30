@@ -1,0 +1,24 @@
+<% age_span_in_periods = current_account.send(:"age_span_in_#{period}s") %>
+
+<tr class="subtitle">
+  <td colspan="3"><%=h subtitle %></td>
+</tr>
+
+<%= render :partial => "shared/totals_row", :locals => { :which => "this",
+      :period => period,
+      :date_format => date_format } %>
+
+<% if age_span_in_periods > 1 %>
+  <%= render :partial => "shared/totals_row", :locals => { :which => "last",
+        :period => period,
+        :date_format => date_format } %>
+<% end %>
+
+<% if age_span_in_periods > 2 %>
+  <tr>
+    <td colspan="3">
+      <%= link_to _("earlier..."), stats_expenses_path(@find_options),
+          :class => "bgicon earlier" %>
+    </td>
+  </tr>
+<% end %>

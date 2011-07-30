@@ -1,0 +1,25 @@
+<fieldset>
+<legend><%=_("Primary")%></legend>
+<p>
+  <%=_("Email:")%> <span class="email"><%=h current_user.email %></span><br/>
+  <%= link_to _("Change Email"), edit_settings_email_path,
+        :class => "bgicon email" %>
+</p>
+
+<p>
+  <% if current_account.exclusive? %>
+    <%=_("Only you can access this account.")%><br/>
+    <%= link_to _("Add more people"), new_settings_other_user_path,
+          :class => "bgicon add" %>
+  <% else %>
+    <%=_("There's other people who can access this account.")%><br/>
+    <%= link_to _("Show"), settings_other_users_path,
+          :class => "bgicon info" %>
+  <% end %>
+</p>
+
+<p>
+  <%= link_to _("Change Password"), edit_settings_password_path,
+        :class => "bgicon password" %>
+</p>
+</fieldset>

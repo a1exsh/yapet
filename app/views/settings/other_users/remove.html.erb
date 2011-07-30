@@ -1,0 +1,23 @@
+<h2><%=_("Settings")%></h2>
+<h3><%=_("Remove User from Your Account")%></h3>
+
+<p>
+<%=_("You're about to remove the following user from your
+account:")%> <span class="email"><%=h @user.email %></span>
+</p>
+<p class="warning">
+<strong><%=_("Warning!")%></strong> <%=_("Once removed the above user
+won't be able to list, add or remove expenses, items, etc. on this
+account unless you decide to re-add him or her to your account again.")%>
+</p>
+
+<% form_tag({ :action => "destroy", :id => @user.id },
+            :method => :delete) do %>
+  <%= submit_tag _("Remove") %>
+  <%= link_to _("Cancel"), settings_other_users_path %>
+<% end %>
+
+<p>
+<%= link_to _("Go back to settings"), edit_settings_path,
+    :class => 'bgicon back' %>
+</p>

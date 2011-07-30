@@ -1,0 +1,10 @@
+production:
+  adapter:  postgresql
+#  host:     localhost
+#  port:     5432
+  username: www-data
+  password: <%= Capistrano::CLI.password_prompt("Production DB password: ") %>
+  database: pet
+  allow_concurrency: true
+  encoding: utf8
+  template: template0

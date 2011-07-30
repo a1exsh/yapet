@@ -1,0 +1,43 @@
+<h2><%=_("Keep getting that SSL warning page, huh?")%></h2>
+<p>
+<%=_("Here are some possible reasons:")%>
+</p>
+<% cookies = external_link_to(_("cookies"),
+                              _("http://en.wikipedia.org/wiki/HTTP_cookie")) %>
+<% instructions = link_to(_("instructions"), ssl_instructions_path) %>
+
+<% reasons = \
+   [[_("you have disabled %s in your browser so the site have no way
+        to check that you've read and accepted the SSL warning.") % cookies,
+     _("enable HTTP cookies for this site.")],
+
+    [_("you've deleted or lost your browsing history, including %s.") \
+     % cookies,
+     _("click %s to proceed.  If you get the security problem
+        warning from your browser, follow %s again.") \
+     % [link_to(_("here"), about_accept_ssl_path), instructions]],
+
+    [_("you've visited the site from the same computer, but using
+        another browser."),
+     _("follow %s for your new browser, while making sure
+        cookies are enabled for this site.") % instructions],
+
+    [_("none of the above?  Then there might be a problem with the
+        site itself."),
+     _("%s about your issue and we'll see how can we help you.") \
+     % link_to(_("tell us"), contacts_path)]] %>
+
+<ul id="ssl_problem_reasons">
+  <% for reason in reasons do %>
+  <li>
+    <p>
+      <strong class="cause"><%=_("Cause:")%></strong>
+      <%= reason.first %>
+    </p>
+    <p>
+      <strong class="solution"><%=_("Solution:")%></strong>
+      <%= reason.last %>
+    </p>
+  </li>
+  <% end %>
+</ul>

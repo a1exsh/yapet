@@ -1,0 +1,9 @@
+Put gems and other packages needed for correct operation of the
+application.
+
+sudo gem install mongrel_cluster
+sudo gem install mongrel_rails
+sudo gem install deep_merge
+sudo gem install fast_gettext
+sudo gem install gettext
+...

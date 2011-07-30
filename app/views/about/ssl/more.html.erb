@@ -1,0 +1,31 @@
+<h2><%=_("SSL certificates and authorities")%></h2>
+<p>
+<%= _("The %s technology allows you as a website client to communicate
+securely with the web server, minimizing the risk of a third-party
+intercepting or substituting your sensitive data.") %
+      external_link_to(_("SSL"),
+                       _("http://en.wikipedia.org/wiki/Transport_Layer_Security")) %>
+</p>
+
+<p>
+<% links = []%>
+<%= _("To ensure that you are sending/receiving your data from the
+claimed website, the concept of a server certificate is used.  Server
+certificates are issued by %s and are verified by the website clients.
+In order to let your browser verify that the website's certificate
+is valid you need to install the so called Root Certificate of a
+Certificate Authority which have issued the server certificate.") %
+      external_link_to(_("Certificate Authorities"),
+                       _("http://en.wikipedia.org/wiki/Certificate_authority")) %>
+</p>
+
+<p>
+<% links = [external_link_to(_("CACert.org"), _("http://www.cacert.org/")),
+            link_to(_("instructions"), ssl_instructions_path)] %>
+
+<%= _("Most browsers come with several Certificate Authorities' root
+certificates pre-installed.  Unfortunately, %s used by this site is
+not among them, so you'll need to obtain the CACert's Root Certificate
+and install it as a trusted Certificate Authority in your browser.
+The required procedure is described in detail here: %s") % links %>
+</p>

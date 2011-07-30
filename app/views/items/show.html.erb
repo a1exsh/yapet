@@ -1,0 +1,36 @@
+<h2><%=_("Item Details")%></h2>
+
+<fieldset id="item_general">
+<legend><%=_("General")%></legend>
+
+<%= render :partial => "details_table" %>
+
+<p>
+  <%= link_to _("Remove"), item_path(@item), :method => :delete,
+      :confirm => _("Are you sure you want to remove this item?"),
+      :class => "bgicon kill" %>
+</p>
+</fieldset>
+
+<p>
+  <%= link_to _("Back"), :back, :class => "bgicon back" %>
+</p>
+
+<a name="stats"></a>
+<h3><%=_("Statistics")%></h3>
+<% unless @totals[:grand] == 0 %>
+  <%= render :partial => "shared/totals" %>
+
+  <%= render :partial => "shared/averages",
+      :locals => { :table_id => "item_averages" } %>
+<% else %>
+  <p><%=_("Nothing spent on this Item.")%></p>
+<% end %>
+
+<% if @item.category %>
+<%= link_to _("Show in Category: %s") % @item.category.title,
+    stats_category_path(@item.category), :class => "bgicon stats" %>
+<% else %>
+<%= link_to _("Show in Categories"), stats_categories_path,
+    :class => "bgicon stats" %>
+<% end %>

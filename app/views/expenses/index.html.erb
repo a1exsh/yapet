@@ -1,0 +1,101 @@
+<% destroy_confirmation = _("Are you sure you want to remove this expense record?") %>
+
+<% grid_for(@expenses,
+            { :show_title => @searching,
+              :show_edit => false,
+              :new_record_link_title => _("Enter new expense"),
+              :destroy_confirmation => destroy_confirmation,
+              :after_reload => update_quick_stats_function }) do |g| %>
+
+  <% g.title do %>
+    <% if @searching %>
+      <h2><%=_("Listing search results")%></h2>
+
+      <%= render :partial => "shared/search_terms" %>
+    <% end %>
+  <% end %>
+
+  <% g.column s_("th|Date"), { :class => 'date' },
+       :input_replacement => _("Now") do |r| %>
+    <span title="<%= time_tooltip_text @expense.date %>">
+      <%= date_or_time_ago_in_words(@expense.date) %>
+    </span>
+    <% opts = r.ajax_options.merge(:url => set_date_expense_path(@expense),
+                                   :with => "'value='+$F(this)",
+                                   :success => g.reload_page_js) %>
+    <% onchange_js = remote_function(opts) %>
+    <%= calendar_date_select_tag "expense_#{@expense.id}_date",
+          @expense.date,
+          :hidden => true,
+          :month_year => "label",
+          :buttons => false,
+          :valid_date_check => "date <= (new Date()).stripTime()",
+          :onchange => onchange_js,
+          :image_options => { :title => _("Click to adjust expense date") } %>
+  <% end %>
+
+  <% g.column '', { :class => 'uncategorized' }, { :no_input => true } do %>
+    <% unless @expense.item.category %>
+      <%= render :partial => "uncategorized_item_popup" %>
+    <% end %>
+  <% end %>
+
+  <% g.column '', { :class => 'item-link' }, { :no_input => true } do %>
+    <%= link_to_item @expense.item %>
+  <% end %>
+
+  <% g.column s_("th|Item"), { :class => 'title' },
+     :input => text_field_with_auto_complete(:expense, :item_title,
+                                             { :size => 18 }) do |r| %>
+    <%= in_place_completing_editor_grid_field r, :expense, :item_title, {},
+        { :size => 12 } %>
+    <%= in_place_editor_grid_field r, :expense, :comment,
+        { :class => "in_place_editor_field comment-editor" },
+        { :size => 12, :blank_text => _("comment"),
+          :success => r.set_icon_normal_js } %>
+  <% end %>
+
+  <% g.column s_("th|Amount"), { :class => 'cy' },
+     :input => text_field_with_arithmetic(:expense, :amount,
+                                          :size => 10) do |r| %>
+    <%= in_place_editor_grid_field_with_arithmetic r, :expense, :amount,
+        { :format => "%.2f" }, { :size => 3 } %>
+  <% end %>
+
+  <% unless @expenses.empty? %>
+    <% g.footer do %>
+      <tr class="totals">
+        <td colspan="4" class="total-title"><%=_("Total on Page:")%></td>
+        <td class="cy total-amount">
+          <%=cy @expenses.sum(&:amount) %>
+        </td>
+        <td colspan="3"></td>
+      </tr>
+      <tr>
+        <td colspan="<%= g.total_columns_count %>">
+          <%= render :partial => 'expenses_guide',
+              :locals => { :grid => g } %>
+        </td>
+      </tr>
+    <% end %>
+  <% end %>
+
+  <% g.pagination do %>
+    <%= render :partial => "toggle_show_guide_link" %>
+
+    <% paginate_with_settings @expenses,
+         :settings => { :success => g.reload_page_js } %>
+  <% end %>
+
+  <% g.when_empty do %>
+    <% if @searching %>
+      <h2><%=_("You search didn't give any results")%></h2>
+      <p>
+        <%= link_to _("Click here to view all Expenses"), expenses_path %>
+      </p>
+    <% else %>
+      <%= render :partial => 'first_expense_guide',
+          :locals => { :grid => g } %>
+    <% end %>
+  <% end %>
+<% end %>

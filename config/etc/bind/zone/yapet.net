@@ -1,0 +1,15 @@
+$TTL 3D
+@	IN	SOA	yapet.net. root.yapet.net. (
+			201007061	; serial
+			8H		; refresh
+			2H		; retry
+			4W		; expire
+			1D )		; min TTL
+;
+		NS	ns
+		MX	10 yapet.net.
+;
+yapet.net.	A	195.110.6.179
+ns		A	195.110.6.179
+www		CNAME	yapet.net.
+blog		CNAME	yapet.net.

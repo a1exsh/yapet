@@ -1,0 +1,23 @@
+<VirtualHost *:80>
+  ServerAdmin alex.shulgin@gmail.com
+  ServerName www.yapet.net
+  ServerAlias yapet.net
+
+  DocumentRoot /var/www/pet/current/public
+
+  ErrorLog /var/www/pet/shared/log/error.log
+  CustomLog /var/www/pet/shared/log/access.log combined
+
+  <Directory /var/www/pet/current/public>
+    AllowOverride all
+    Options -MultiViews
+  </Directory>
+
+  RewriteEngine On
+
+  # show maintenance page for any dynamic request if maintenance.html exists
+  RewriteCond %{DOCUMENT_ROOT}/system/maintenance.html -f
+  RewriteCond %{REQUEST_URI} !\.(css|jpg|png)$
+  RewriteCond %{SCRIPT_FILENAME} !maintenance.html
+  RewriteRule ^.*$ %{DOCUMENT_ROOT}/system/maintenance.html [L]
+</VirtualHost>

@@ -1,0 +1,36 @@
+<% reload_js = remote_function :update => "item_details_wrapper",
+   :url => { :controller => "items", :action => "details_table",
+     :id => @item.id },
+   :method => :get %>
+
+<div id="item_details_wrapper">
+  <table class="item-details">
+    <tr>
+      <td><div id="item_title_status" class="icon"/></td>
+      <td><%=_("Title:")%></td>
+      <td class="icon"></td>
+      <td>
+        <%= in_place_completing_editor_field :item, :title, {},
+            { :status_icon_id => "item_title_status",
+              :reload_js => reload_js } %>
+      </td>
+    </tr>
+    <tr>
+      <td><div id="item_category_status" class="icon"/></td>
+      <td><%=_("Category:")%></td>
+      <td class="icon">
+        <% if @item.category %>
+          <%= link_to '', category_path(@item.category),
+              :title => _("Click to view this Category"),
+              :class => "icon icon-category" %>
+        <% end %>
+      </td>
+      <td>
+        <%= in_place_completing_editor_field :item, :category_title, {},
+            { :status_icon_id => "item_category_status",
+              :reload_js => reload_js,
+              :blank_text => _("uncategorized") } %>
+      </td>
+    </tr>
+  </table>
+</div>

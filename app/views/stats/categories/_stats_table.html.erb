@@ -1,0 +1,73 @@
+<% this_category = @category %>
+
+<div class="stats-title">
+<h2><%=_("Expense Statistics by Category")%></h2>
+
+<% if @category %>
+<h3>
+  <%= category_breadcrumbs @category, :stats_category_path,
+      :stats_categories_path, @search_options %>
+</h3>
+<% end %>
+
+<%= render :partial => "shared/search_terms" if @searching %>
+</div>
+
+<table class="stats">
+  <thead>
+    <tr>
+      <th class="category-link"></th>
+      <th class="title"><%=_("Category")%></th>
+      <th class="cy"><%=s_("th|Total Spent")%></th>
+      <th class="expenses-link"></th>
+      <th class="stats-link"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for @category in @categories do %>
+      <tr>
+        <td class="category-link"><%= link_to_category @category %></td>
+        <td class="title">
+          <%= link_to_category_stats @category, @search_options %>
+        </td>
+        <td class="cy"><%=cy @category_totals[@category.id] %></td>
+        <td class="expenses-link">
+          <%= find_expenses_link @search_options.merge(:category => @category.id) unless @category_totals[@category.id] == 0 %>
+        </td>
+        <td class="stats-link">
+          <%= link_to_expenses_stats :category => @category.id %>
+        </td>
+      </tr>
+    <% end %>
+    <% for @item in @items do %>
+      <tr>
+        <td class="item-link"><%= link_to_item @item %></td>
+        <td class="title"><%=h @item.title %></td>
+        <td class="cy"><%=cy @item_totals[@item.id] %></td>
+        <td class="expenses-link">
+          <%= find_expenses_link @search_options.merge(:item => @item.id) unless @item_totals[@item.id] == 0 %>
+        </td>
+        <td class="stats-link">
+          <%= link_to_expenses_stats :item => @item.id %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+  <tfoot>
+    <tr class="totals">
+      <td colspan="2"><%=_("Grand Total:")%></td>
+      <td class="cy"><%=cy @grand_total %></td>
+      <td class="expenses-link">
+        <% unless @grand_total == 0 %>
+          <% options = @search_options %>
+          <% options.merge!(:category => this_category.id) if this_category %>
+          <%= find_expenses_link options %>
+        <% end %>
+      </td>
+      <td class="stats-link">
+        <% options = this_category ? { :category => this_category.id } : {} %>
+        <%= link_to_expenses_stats options %>
+      </td>
+    </tr>
+  </tfoot>
+</table>

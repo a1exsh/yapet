@@ -1,0 +1,29 @@
+<h2><%=_("Settings")%></h2>
+<h3><%=_("Change Email")%></h3>
+
+<p><%=_("Please enter your current password to change your email
+address.")%></p>
+
+<% form_tag({ :action => "update" }, :method => :put) do %>
+<table class="settings-table">
+  <tbody>
+  <tr>
+    <td><%= label_tag "password", _("Password") %></td>
+    <td><%= password_field_tag "password" %></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><%= label_tag "new_email", _("New Email") %></td>
+    <td><%= text_field_tag "new_email", params[:new_email] %></td>
+  </tr>
+  </tbody>
+  <tfoot>
+  <tr>
+    <td colspan="2">
+      <%= submit_tag _("Change") %>
+      <%= link_to _("Cancel"), edit_settings_path %>
+    </td>
+  </tr>
+  </tfoot>
+</table>
+<% end %>

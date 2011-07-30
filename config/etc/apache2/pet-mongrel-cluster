@@ -1,0 +1,9 @@
+<Proxy *>
+  Order allow,deny
+  Allow from all
+</Proxy>
+
+<Proxy balancer://mongrel_cluster>
+  BalancerMember http://127.0.0.1:8000
+  BalancerMember http://127.0.0.1:8001
+</Proxy>

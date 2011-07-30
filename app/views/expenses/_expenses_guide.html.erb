@@ -1,0 +1,42 @@
+<div id="expenses_guide"
+     style="<%= "display: none;" unless current_user.show_guide %>">
+  <ul>
+    <li>
+      <%=_("Start typing an Item name in the entry field to see
+      suggestions.")%>
+    </li>
+    <li>
+      <%=_("Type &ldquo;?&rdquo; (question mark) alone to see all
+      possible suggestions.")%>
+    </li>
+    <li>
+      <%=_("Click on the &ldquo;comment&rdquo; field next to an Item title to
+      comment on the expense.")%>
+    </li>
+    <li>
+      <%=_("Click on the Item title or Amount to edit it.")%>
+    </li>
+    <li>
+      <div>
+        <div class="icon icon-item" style="float: left; margin-right: 4px;"></div><%=_("Click on the item icon left of an Item to
+        review it.")%>
+        <div style="clear: both;"></div>
+      </div>
+    </li>
+    <li>
+      <div>
+        <div class="icon icon-uncategorized" style="float: left; margin-right: 4px;"></div><%=_("Click on the
+      &ldquo;uncategorized&rdquo; icon to enter an Item's category.
+      Entering a Category for an Item is just like entering the Item
+      title for an Expense: start typing to see suggestions.")%>
+        <div style="clear: both;"></div>
+      </div>
+    </li>
+    <li>
+      <div>
+        <div class="icon icon-calendar" style="float: left; margin-right: 4px;"></div><%=_("Click on the date picker calendar icon to adjust the date of an entered expense if you like.")%>
+        <div style="clear: both;"></div>
+      </div>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,16 @@
+# Some overrides for nicer date/time display, etc.
+ru:
+  date:
+    formats:
+      short: "%d %B"
+  time:
+    formats:
+      short: "%d %B, %H:%M"
+
+  activerecord:
+    errors:
+      models:
+        category:
+          attributes:
+            parent:
+              refcycle: "не может содержать саму себя"

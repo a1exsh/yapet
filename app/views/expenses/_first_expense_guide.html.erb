@@ -1,0 +1,39 @@
+<div id="no_expenses_banner">
+  <h2><%=_("You do not have any expense records yet")%></h2>
+  <p>
+    <% title = _("Click here to start tracking your expenses") %>
+    <% effect_js = "$('no_expenses_banner').hide();" +
+         "$('expenses_guide').appear();" %>
+    <%= grid.new_record_link title, effect_js %>
+  </p>
+</div>
+<div id="expenses_guide" style="display: none;">
+  <p>
+    <%=_("So this is the first time you enter an expense record.  Let
+        us guide you through...")%>
+  </p>
+  <p>
+    <%=_("The entry fields should appear above which allow you to
+        enter what you've spent on today&nbsp;(Item title) and how
+        much did that cost you&nbsp;(Amount).")%>
+  </p>
+  <ul>
+    <li>
+      <%=_("You may enter anything in the item title field.  Newly
+          entered items are created automatically and already existing
+          ones are used for suggestions.")%>
+    </li>
+    <li>
+      <%=_("Enter any positive numerical value for the amount.
+          You may use two digits after the decimal point to denote,
+          e.g. cents.")%>
+    </li>
+    <li>
+      <%=_("Hit TAB to go to the next entry field.  Hit ENTER or
+          click the submit icon at any time to save the record.")%>
+    </li>
+  </ul>
+  <p>
+    <em><%=_("Now go on, give it a try!")%></em>
+  </p>
+</div>

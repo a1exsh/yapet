@@ -1,0 +1,90 @@
+<% @parent_category ||= nil %>
+<% in_categories = @parent_category || @uncategorized_only %>
+
+<% reload_params = {} %>
+<% if @parent_category %>
+  <% reload_params[:category] = @parent_category.id %>
+<% elsif @uncategorized_only %>
+  <% reload_params[:uncategorized] = true %>
+<% end %>
+
+<% grid(:item, @items,
+        { :reload_params => reload_params,
+          :show_title => false,
+          :show_edit => false,
+          :new_record_link_title => _("Enter new item"),
+          :after_destroy => update_quick_stats_function }) do |g| %>
+
+  <% g.column '', { :class => 'item-link' }, :no_input => true do %>
+    <%= link_to_item @item %>
+  <% end %>
+
+  <% g.column _("Title"), { :class => 'title' },
+     :input => text_field_with_auto_complete(:item, :title, { :size => 18 },
+                                             { :controller => :items }) do |r| %>
+    <%= in_place_completing_editor_grid_field r, :item, :title, {},
+        { :controller => :items, :size => 11 } %>
+  <% end %>
+
+  <% unless in_categories %>
+    <% g.column '', { :class => 'category-link' }, :no_input => true do |r| %>
+      <% if @item.category %>
+        <%= link_to '', @item.category,
+            :class => "icon icon-category",
+            :title => _("Click to view this Category") %>
+      <% end %>
+    <% end %>
+  <% end %>
+
+  <% parent_title = @parent_category ? @parent_category.title : "" %>
+  <% g.column _("Category"), { :class => 'category' },
+     :input => text_field_with_auto_complete(:item, :category_title,
+                                             { :size => 18,
+                                               :value => parent_title },
+                                             { :controller => :items }) do |r| %>
+    <%= in_place_completing_editor_grid_field r, :item, :category_title, {},
+        { :controller => :items, :size => 11,
+          :blank_text => _("uncategorized") } %>
+  <% end %>
+
+  <% g.column s_("th|Total Spent"), { :class => 'cy' }, :no_input => true do %>
+    <%=cy @expense_total_by_item_id[@item.id] %>
+  <% end %>
+
+  <% g.column '', { :class => 'expenses-link' }, :no_input => true do %>
+    <% unless (@expense_total_by_item_id[@item.id] || 0) == 0 %>
+      <%= link_to '', expenses_path(:item => @item.id),
+          :class => "icon icon-expenses",
+          :title => _("Click to find matching Expenses") %>
+    <% end %>
+  <% end %>
+
+  <% g.confirm_destroy do -%>
+    <% expense_count = @expense_count_by_item_id[@item.id] %>
+    <% unless expense_count.nil? -%>
+      <% confirm = _("Removing this item will also remove %d associated expense records.\n\n") % expense_count -%>
+    <% else -%>
+      <% confirm = "" -%>
+    <% end -%>
+    <%= confirm += _("Are you sure you want to remove this item?") -%>
+  <% end -%>
+
+  <% unless in_categories %>
+    <% g.pagination do %>
+      <% paginate_with_settings @items,
+         :settings => { :success => g.reload_page_js } %>
+    <% end %>
+  <% end %>
+
+  <% g.when_empty do %>
+    <% unless in_categories %>
+      <h2><%=_("Your list of items is empty")%></h2>
+      <p>
+        <%=_("You may add some items here beforehand, but it's easier to
+      just use the&nbsp;%s page.  New items are added automatically
+      when you record new expenses.") % link_to(_("Expenses"),
+      expenses_path, :class => "bgicon expense")%>
+      </p>
+    <% end %>
+  <% end %>
+<% end %>

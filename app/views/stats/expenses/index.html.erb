@@ -1,0 +1,46 @@
+<div class="stats-title">
+<h2><%=_("Expenses Statistics by Date")%></h2>
+
+<%= render :partial => "shared/search_terms" if @searching %>
+</div>
+
+<table class="stats">
+  <thead>
+    <tr>
+      <th><%=_("Year")%></th>
+      <th><%=_("Month")%></th>
+      <th><%=s_("th|Total Spent")%></th>
+      <th class="expenses-link"></th>
+      <th class="category-link"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @monthly_stats.reverse.each do |stats| %>
+      <% date = stats.first.to_date %>
+      <% amount = stats.last %>
+      <tr>
+        <td><%=l date, :format => "%Y" %></td>
+        <td class="month"><%=l date, :format => "%B" %></td>
+        <td class="cy"><%=cy amount %></td>
+        <td class="expenses-link">
+          <%= find_expenses_link @search_options.merge(:month => date) unless amount == 0 %>
+        </td>
+        <td class="category-link">
+          <%= link_to_category_stats_with_search :month => date %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+  <tfoot>
+    <tr class="totals">
+      <td colspan="2" class="total-title"><%=_("Grand Total:")%></td>
+      <td class="cy"><%=cy @grand_total %></td>
+      <td class="expenses-link">
+        <%= find_expenses_link @search_options if @searching && @grand_total > 0 %>
+      </td>
+      <td class="category-link">
+        <%= link_to_category_stats_with_search %>
+      </td>
+    </tr>
+  </tfoot>
+</table>

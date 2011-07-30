@@ -1,0 +1,46 @@
+<% wrapper_div_class = "item-#{@expense.item.id}-categorize-wrapper" %>
+<% form_id = "expense_#{@expense.id}_categorize_form" %>
+<% popup_id = "expense_#{@expense.id}_categorize_popup" %>
+<% input_id = "expense_#{@expense.id}_categorize_input" %>
+<% link_id = "expense_#{@expense.id}_categorize_link" %>
+<% success_js = <<EOF
+function() {
+  $$('div.#{wrapper_div_class}').each(function(el) {
+    el.fade({ duration: 0.25,
+              afterFinish: function() { el.remove(); } });
+  });
+}
+EOF
+%>
+<div class="<%= wrapper_div_class %>">
+  <% categorize_popup = popup _("Categorize Item"), :id => popup_id do |p| %>
+
+    <% remote_form_for "nothing",
+       :html => { :id => form_id, :class => "expense-item-categorize-form" },
+       :url => { :controller => "items", :action => "set_item_category_title",
+         :id => @expense.item.id },
+       :method => :post,
+       :loading => "startSpinner('#{form_id}')",
+       :complete => "stopSpinner('#{form_id}');" + \
+       p.fade_js(:afterFinish => success_js) do |f| %>
+
+      <%= text_field_with_auto_complete(:item, :category_title,
+                                        { :id => input_id,
+                                          :name => "value",
+                                          :value => "",
+                                          :size => 25 },
+                                        { :controller => :items }) %>
+
+      <%= link_to_function '', "submitForm('#{form_id}')",
+          :class => "icon icon-ok",
+          :style => "display: inline-block; vertical-align: middle;" %>
+    <% end %>
+  <% end %>
+
+  <% appear_js = categorize_popup.appear_js(link_id, :afterFinish => "function(){$('#{input_id}').focus();}") %>
+
+  <%= link_to_function '', appear_js,
+      :id => link_id,
+      :class => "icon icon-uncategorized",
+      :title => _("Click to Categorize") %>
+</div>

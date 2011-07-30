@@ -1,0 +1,18 @@
+/*
+  Chrome & Firefox disagree on link height and this becomes apparent
+  when we add some background image.
+
+  Fix by adding 2 pixels of padding at the top of every link with icon
+  in Chrome and moving background 2 pixels down in all browsers.
+*/
+a.bgicon {
+    padding-top: 2px;
+}
+
+/*
+  This makes auto-complete text aligned with input, but only in
+  Chrome.  We have another set of tweaks for Firefox.
+*/
+div.auto_complete {
+    font-size: 80%;
+}

@@ -1,0 +1,23 @@
+<h1><%=_("Editing expense")%></h1>
+
+<% form_for(@expense) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= label :item, :title, _("Item") %><br />
+    <%= text_field_with_auto_complete :expense, :item_title %>
+  </p>
+  <p>
+    <%= f.label :amount, _("Amount") %><br />
+    <%= f.text_field :amount %>
+  </p>
+  <p>
+    <%= f.label :comment, _("Comment") %><br />
+    <%= f.text_field :comment %>
+  </p>
+  <p>
+    <%= f.submit _("Update") %>
+  </p>
+<% end %>
+
+<%= link_to _("Back"), expenses_path %>

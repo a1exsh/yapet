@@ -1,0 +1,36 @@
+<fieldset>
+<legend><%=_("Interface")%></legend>
+<% form_tag({ :action => "update" }, :method => :put) do %>
+<table class="settings-table" width="100%">
+  <tbody>
+  <tr>
+    <td><%= label_tag "current_user_locale", _("Interface Language") %></td>
+    <td><%= select "current_user", "locale", locale_choices, {},
+            :name => "user[locale]" %></td>
+  </tr>
+  <tr>
+    <td><%= label_tag "current_user_timezone", _("Time Zone") %></td>
+    <td><%= time_zone_select "current_user", "timezone", nil, {},
+            :name => "user[timezone]" %></td>
+  </tr>
+  <tr>
+    <td><%= label_tag "current_user_records_per_page", _("Records per Page") %></td>
+    <td><%= select "current_user", "records_per_page", pagination_choices, {},
+            :name => "user[records_per_page]" %></td>
+  </tr>
+  <tr>
+    <td><%= label_tag "current_user_show_guide", _("Show Guide") %></td>
+    <td><%= check_box "current_user", "show_guide",
+            :name => "user[show_guide]" %></td>
+  </tr>
+  </tbody>
+  <tfoot>
+  <tr>
+    <td colspan="2">
+      <%= submit_tag _("Save") %>
+    </td>
+  </tr>
+  </tfoot>
+</table>
+<% end %>
+</fieldset>

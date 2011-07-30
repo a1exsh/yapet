@@ -1,0 +1,68 @@
+- views: add totals and checkboxes into expenses table
+- views: add sub-totals
+
+* src: dont forget to add license and serve svn pulicly!
+
+* i18n: mb_chars -- does it have to be so ugly?  monkey-patch String?
+
+- users: can timezone account for daylight saving time?
+
+- views: keyboard: ESC, hotkeys like in gmail: j=down, k=up, n=new, /=search
+- views: SVG graphs with links; can it handle ajax???
+
+- pagination: ajax
+- active grid: make a plugin
+
+* views: add to-be-done expenses (a-la reminders what to buy today)
+* views: add recurring expenses (re-think first!)
+
+* auto-complete is buggy!
+
+- when renaming an item to a name which is already taken it would be
+   nice to merge items instead of giving an error; ask user before
+   proceeding
+
+* tip of the day
+
+* multiple currencies
+
+- we have some h2s, but is there any h1?
+
+- cannot have bgicon + new at the same time
+
+* expenses/index: add Search, Show All (for search results)
+
+* !!! it ought to be possible to undo almost anything (most important,
+   removing items, as this wipes out associated expenses)
+
+- layout: add content for page title
+
+* offer CSV import-export for offline (desktop) use, synchronization
+
+* offer visual effects level setting, for different browsers.  'get
+   better browser' link for IE
+
+* reverse dns is not working
+
+- weird things happen after logging out in another browser window
+
+- use <ul> for header links
+
+- sqlite: Russian auto-complete doesn't work for first capitalized
+   letter
+
+- calendar: year, month, day: links to expenses and stats
+
+* user may delete account (ownership transfered?)
+
+* about controller: compatibility (browsers), feedback form
+
+* changing date with unusual timezone is buggy
+
+* accept donations: first thing -- bitcoin
+
+* improve order in auto-complete: first word is higher priority
+
+* add stars like in gmail
+
+* WRITE SOME TESTS *

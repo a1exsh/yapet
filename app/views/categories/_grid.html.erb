@@ -1,0 +1,53 @@
+<% @parent_category ||= nil %>
+<% options = {} %>
+<% if @parent_category %>
+  <% options[:reload_url] = subcategories_category_path(@parent_category) %>
+<% else %>
+  <% options[:reload_url] = toplevel_categories_path %>
+<% end %>
+
+<% options[:show_title] = false %>
+<% options[:show_edit] = false %>
+<% options[:new_record_link_title] = _("Enter new category") %>
+<% options[:destroy_confirmation] = _("Are you sure you want to remove this category?") %>
+
+<% grid_for @categories, options do |g| %>
+
+  <% g.column '', { :class => 'category-link' }, :no_input => true do %>
+    <%= link_to_category @category %>
+  <% end %>
+
+  <% g.column _("Title"), { :class => 'category' },
+     :input => text_field_with_auto_complete(:category, :title,
+                                             { :size => 18,
+                                               :value => "" }) do |r| %>
+    <%= in_place_completing_editor_grid_field r, :category, :title, {},
+        { :size => 11 } %>
+  <% end %>
+
+  <% parent_title = @parent_category ? @parent_category.title : "" %>
+  <% g.column _("Subcategory of"), { :class => 'category' },
+     :input => text_field_with_auto_complete(:category, :parent_title,
+                                             { :size => 18,
+                                               :value => parent_title }) do |r| %>
+    <%= in_place_completing_editor_grid_field r, :category, :parent_title, {},
+        { :size => 11, :blank_text => _("uncategorized") } %>
+  <% end %>
+
+  <% g.column s_("th|Total Spent"), { :class => 'cy' }, :no_input => true do %>
+    <%=cy @expense_total_by_category_id[@category.id] %>
+  <% end %>
+
+  <% unless @parent_category %>
+    <% g.pagination do %>
+      <% paginate_with_settings @categories,
+         :settings => { :success => g.reload_page_js } %>
+    <% end %>
+  <% end %>
+
+  <% g.when_empty do %>
+    <% unless @parent_category %>
+      <h2><%=_("Your list of categories is empty")%></h2>
+    <% end %>
+  <% end %>
+<% end %>

@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+require File.dirname(__FILE__) + '/../config/boot'
+
+# This fixes the initialization for some gems/plugins when run not
+# from the app directory, e.g. from cron.
+Dir.chdir(RAILS_ROOT)
+
+require 'commands/runner'

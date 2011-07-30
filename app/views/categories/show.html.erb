@@ -1,0 +1,47 @@
+<%# @category gets overwritten by grid, so save it here %>
+<% this_category = @category %>
+
+<%= render :partial => "details_table" %>
+
+<p>
+  <%= link_to _("Back"), :back, :class => "bgicon back" %>
+  <span class="link-separator">|</span>
+  <a href="#stats" class="bgicon stats"><%=_("Statistics")%></a>
+</p>
+
+<% unless @subcategories.empty? %>
+  <h3><%=_("Subcategories")%></h3>
+<% else %>
+  <h3><%=_("No Subcategories")%></h3>
+<% end %>
+
+<% @categories = @subcategories %>
+<% @parent_category = this_category %>
+
+<%= render :partial => 'grid' %>
+
+<% unless @items.empty? %>
+  <h3><%=_("Items in This Category")%></h3>
+<% else %>
+  <h3><%=_("No Items in This Category")%></h3>
+<% end %>
+
+<%= render :partial => 'items/grid' %>
+
+<a name="stats"></a>
+<h3><%=_("Statistics")%></h3>
+<% unless @totals[:grand] == 0 %>
+  <%= render :partial => "shared/totals" %>
+
+  <%= render :partial => "shared/averages" %>
+<% else %>
+  <p><%=_("Nothing spent on this Category.")%></p>
+<% end %>
+
+<% if this_category.parent %>
+<%= link_to _("Show in Category: %s") % this_category.parent.title,
+    stats_category_path(this_category.parent), :class => "bgicon stats" %>
+<% else %>
+<%= link_to _("Show in Categories"), stats_categories_path,
+    :class => "bgicon stats" %>
+<% end %>

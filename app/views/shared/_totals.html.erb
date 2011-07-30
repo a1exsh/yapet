@@ -1,0 +1,28 @@
+<fieldset>
+<legend><%=_("Totals")%></legend>
+
+<table class="totals">
+  <%= render :partial => "shared/totals_rowset", :locals => {
+        :period => "month",
+        :subtitle => _("By Month"),
+        :date_format => "%B" } %>
+
+  <%# TODO: that's not accurate; better check first_expense year %>
+  <% if current_account.age_span_in_years > 1 %>
+    <%= render :partial => "shared/totals_rowset", :locals => {
+          :period => "year",
+          :subtitle => _("By Year"),
+          :date_format => "%Y" } %>
+  <% end %>
+
+  <tr class="totals">
+    <td><%=_("Grand Total:")%></td>
+    <td class="cy"><%=cy @totals[:grand] %></td>
+    <td class="expenses-link">
+      <% unless @totals[:grand] == 0 %>
+        <%= find_expenses_link @find_options %>
+      <% end %>
+    </td>
+  </tr>
+</table>
+</fieldset>

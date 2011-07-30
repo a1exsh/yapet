@@ -1,0 +1,9 @@
+MAILTO=root
+
+#*/1  * * * * cd <%= current_path %> && rake RAILS_ENV=production crondonkulous:every_minute >/dev/null
+#*/5  * * * * cd <%= current_path %> && rake RAILS_ENV=production crondonkulous:every_5_minutes >/dev/null
+#*/15 * * * * cd <%= current_path %> && rake RAILS_ENV=production crondonkulous:every_15_minutes >/dev/null
+01   * * * * cd <%= current_path %> && rake RAILS_ENV=production crondonkulous:every_hour >/dev/null
+02   3 * * * cd <%= current_path %> && rake RAILS_ENV=production crondonkulous:every_day >/dev/null
+#03   0 * * 1 cd <%= current_path %> && rake RAILS_ENV=production crondonkulous:every_week >/dev/null
+#04   0 1 * * cd <%= current_path %> && rake RAILS_ENV=production crondonkulous:every_month >/dev/null
